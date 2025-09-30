@@ -1,0 +1,22 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+    env:
+      ROS_DISTRO: jazzy
+      WS: ${{ github.workspace }}/ws
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup ROS 2
+        uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: jazzy
+
+      - name: Build
+        run: ./build.sh
+
+      - name: Test
+        run: ./test.sh
