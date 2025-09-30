@@ -1,2 +1,2 @@
-# capstone-template
-BSU CS481 Capstone project template
+[![CI](https://github.com/Keys-481/fa25-prime-directive/actions/workflows/ci.yml/badge.svg)](https://github.com/Keys-481/fa25-prime-directive/actions/workflows/ci.yml)
+
