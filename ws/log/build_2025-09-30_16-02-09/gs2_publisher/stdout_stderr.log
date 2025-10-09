@@ -1,0 +1,67 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found ydlidar_sdk package
+[33mCMake Warning at CMakeLists.txt:27 (message):
+  ydlidar_sdk package found, but no target exported; falling back to manual
+  link
+
+[0m
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+[0m
+-- Build files have been written to: /home/potato/ws/build/gs2_publisher
+[ 50%] [32mBuilding CXX object CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o[0m
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:78:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGSLidarDriver[m[K’ does not name a type
+   78 |   [01;31m[KGSLidarDriver[m[K* drv_{nullptr};
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In constructor ‘[01m[KNodeGS::[01;32m[KNodeGS[m[K()[m[K’:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrv_[m[K’ was not declared in this scope
+   23 |     [01;31m[Kdrv_[m[K = GSLidarDriver::CreateDriver(YDLIDAR_TYPE_SERIAL);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:23:12:[m[K [01;31m[Kerror: [m[K‘[01m[KGSLidarDriver[m[K’ has not been declared
+   23 |     drv_ = [01;31m[KGSLidarDriver[m[K::CreateDriver(YDLIDAR_TYPE_SERIAL);
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In destructor ‘[01m[Kvirtual NodeGS::[01;32m[K~NodeGS[m[K()[m[K’:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrv_[m[K’ was not declared in this scope
+   37 |     if ([01;31m[Kdrv_[m[K) { drv_->stop(); drv_->disconnect(); GSLidarDriver::DestroyDriver(drv_); }
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:37:51:[m[K [01;31m[Kerror: [m[K‘[01m[KGSLidarDriver[m[K’ has not been declared
+   37 |     if (drv_) { drv_->stop(); drv_->disconnect(); [01;31m[KGSLidarDriver[m[K::DestroyDriver(drv_); }
+      |                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In member function ‘[01m[Kvoid NodeGS::[01;32m[Ktick[m[K()[m[K’:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:43:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrv_[m[K’ was not declared in this scope
+   43 |     if (![01;31m[Kdrv_[m[K->grabScanData(scan)) return;
+      |          [01;31m[K^~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrv_[m[K’ was not declared in this scope
+   44 |     [01;31m[Kdrv_[m[K->ascendScanData(scan);
+      |     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/gs2_node.dir/build.make:76: CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gs2_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

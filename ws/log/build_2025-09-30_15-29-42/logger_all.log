@@ -1,0 +1,205 @@
+[0.137s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--cmake-clean-cache']
+[0.137s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=True, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa3fe6cc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa4197410>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa4197410>>, mixin_verb=('build',))
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.193s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/potato/ws'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/gs2_publisher) by extension 'ros'
+[0.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gs2_publisher' with type 'ros.catkin' and name 'gs2_publisher'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.262s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/potato/ws/install
+[0.264s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 196 installed packages in /opt/ros/jazzy
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'cmake_clean_cache' from command line to 'True'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'gs2_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'gs2_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/potato/ws/build/gs2_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/potato/ws/install/gs2_publisher', 'merge_install': False, 'path': '/home/potato/ws/src/gs2_publisher', 'symlink_install': True, 'test_result_base': None}
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'True'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.307s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/potato/ws/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/potato/ws/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/potato/ws/src/ydlidar_ros2_driver', 'symlink_install': True, 'test_result_base': None}
+[0.307s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.308s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.308s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/potato/ws/src/gs2_publisher' with build type 'catkin'
+[0.308s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/potato/ws/src/gs2_publisher'
+[0.311s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.311s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.311s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.315s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/potato/ws/src/ydlidar_ros2_driver' with build type 'ament_cmake'
+[0.315s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/potato/ws/src/ydlidar_ros2_driver'
+[0.315s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.315s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[0.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver
+[2.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[2.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4
+[2.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/potato/ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver
+[2.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/potato/ws/build/ydlidar_ros2_driver -- -j4 -l4
+[2.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/potato/ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/potato/ws/build/ydlidar_ros2_driver -- -j4 -l4
+[2.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/potato/ws/build/ydlidar_ros2_driver
+[2.326s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[2.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/potato/ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/potato/ws/build/ydlidar_ros2_driver
+[2.329s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver' for CMake module files
+[2.330s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver' for CMake config files
+[2.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[2.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[2.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[2.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[2.334s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/lib'
+[2.335s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/bin'
+[2.335s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[2.335s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/lib/python3.12/site-packages'
+[2.335s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/bin'
+[2.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[2.336s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[2.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[2.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[2.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[2.344s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/potato/ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[2.346s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver' for CMake module files
+[2.347s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver' for CMake config files
+[2.347s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[2.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[2.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/lib'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/bin'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/lib/python3.12/site-packages'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/ydlidar_ros2_driver/bin'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[2.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[2.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[2.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[2.358s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/potato/ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[9.317s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4
+[9.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake --install /home/potato/ws/build/gs2_publisher
+[9.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake --install /home/potato/ws/build/gs2_publisher
+[9.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('gs2_publisher', 'ros_package_path')
+[9.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/ros_package_path.ps1'
+[9.343s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/ros_package_path.dsv'
+[9.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/ros_package_path.sh'
+[9.346s] Level 1:colcon.colcon_core.shell:create_environment_hook('gs2_publisher', 'pkg_config_path')
+[9.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/pkg_config_path.ps1'
+[9.347s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/pkg_config_path.dsv'
+[9.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/pkg_config_path.sh'
+[9.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('gs2_publisher', 'pkg_config_path_multiarch')
+[9.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/pkg_config_path_multiarch.ps1'
+[9.353s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/pkg_config_path_multiarch.dsv'
+[9.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/pkg_config_path_multiarch.sh'
+[9.356s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gs2_publisher)
+[9.357s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/gs2_publisher' for CMake module files
+[9.357s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/gs2_publisher' for CMake config files
+[9.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('gs2_publisher', 'cmake_prefix_path')
+[9.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/cmake_prefix_path.ps1'
+[9.359s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/cmake_prefix_path.dsv'
+[9.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/hook/cmake_prefix_path.sh'
+[9.362s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/gs2_publisher/lib'
+[9.362s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/gs2_publisher/bin'
+[9.362s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/gs2_publisher/lib/pkgconfig/gs2_publisher.pc'
+[9.362s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/gs2_publisher/lib/python3.12/site-packages'
+[9.363s] Level 1:colcon.colcon_core.environment:checking '/home/potato/ws/install/gs2_publisher/bin'
+[9.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.ps1'
+[9.364s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.dsv'
+[9.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.sh'
+[9.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.bash'
+[9.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.zsh'
+[9.373s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/potato/ws/install/gs2_publisher/share/colcon-core/packages/gs2_publisher)
+[9.374s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.374s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.374s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.375s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.382s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[9.383s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.383s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.383s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.384s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[9.384s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.384s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/potato/ws/install/local_setup.ps1'
+[9.386s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/potato/ws/install/_local_setup_util_ps1.py'
+[9.387s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/potato/ws/install/setup.ps1'
+[9.389s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/potato/ws/install/local_setup.sh'
+[9.390s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/potato/ws/install/_local_setup_util_sh.py'
+[9.391s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/potato/ws/install/setup.sh'
+[9.393s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/potato/ws/install/local_setup.bash'
+[9.394s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/potato/ws/install/setup.bash'
+[9.396s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/potato/ws/install/local_setup.zsh'
+[9.397s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/potato/ws/install/setup.zsh'

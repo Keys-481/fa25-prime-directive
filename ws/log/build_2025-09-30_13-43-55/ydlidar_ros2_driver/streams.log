@@ -1,0 +1,25 @@
+[0.013s] Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver
+[0.033s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.355s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.385s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.398s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.413s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.432s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.512s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.514s] [31mCMake Error at /opt/ros/jazzy/share/rmw_implementation_cmake/cmake/get_default_rmw_implementation.cmake:60 (message):
+[0.514s]   Could not find ROS middleware implementation 'rmwcyclonedds_cpp'.  Choose
+[0.514s]   one of the following: rmw_cyclonedds_cpp, rmw_fastrtps_cpp
+[0.514s] Call Stack (most recent call first):
+[0.515s]   /opt/ros/jazzy/share/rmw_implementation/cmake/rmw_implementation-extras.cmake:19 (get_default_rmw_implementation)
+[0.515s]   /opt/ros/jazzy/share/rmw_implementation/cmake/rmw_implementationConfig.cmake:41 (include)
+[0.515s]   /opt/ros/jazzy/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.515s]   /opt/ros/jazzy/share/rcl/cmake/rclConfig.cmake:41 (include)
+[0.515s]   /opt/ros/jazzy/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.515s]   /opt/ros/jazzy/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)
+[0.515s]   /opt/ros/jazzy/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.515s]   /opt/ros/jazzy/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[0.515s]   CMakeLists.txt:16 (find_package)
+[0.515s] 
+[0.515s] [0m
+[0.516s] -- Configuring incomplete, errors occurred!
+[0.522s] Invoked command in '/home/potato/ws/build/ydlidar_ros2_driver' returned '1': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver

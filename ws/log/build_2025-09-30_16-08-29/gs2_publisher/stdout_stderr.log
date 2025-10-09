@@ -1,0 +1,76 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found ydlidar_sdk package
+[33mCMake Warning at CMakeLists.txt:27 (message):
+  ydlidar_sdk package found, but no target exported; falling back to manual
+  link
+
+[0m
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+[0m
+-- Build files have been written to: /home/potato/ws/build/gs2_publisher
+[ 50%] [32mBuilding CXX object CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o[0m
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:15:16:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ has not been declared in ‘[01m[Kydlidar[m[K’
+   15 | using ydlidar::[01;31m[KLaserScan[m[K;
+      |                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In constructor ‘[01m[KNodeGS::[01;32m[KNodeGS[m[K()[m[K’:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:38:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCreateDriver[m[K’ is not a member of ‘[01m[Kydlidar::GSLidarDriver[m[K’
+   38 |     drv_ = GSLidarDriver::[01;31m[KCreateDriver[m[K(YDLIDAR_TYPE_SERIAL);
+      |                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:47:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kvirtual result_t ydlidar::GSLidarDriver::[01;32m[KgetDeviceInfo[m[K(device_info&, uint32_t)[m[K’ is protected within this context
+   47 |     [01;31m[Kdrv_->getDeviceInfo(di)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:5[m[K:
+[01m[K/usr/local/include/src/GSLidarDriver.h:418:22:[m[K [01;36m[Knote: [m[Kdeclared protected here
+  418 |     virtual result_t [01;36m[KgetDeviceInfo[m[K(
+      |                      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In destructor ‘[01m[Kvirtual NodeGS::[01;32m[K~NodeGS[m[K()[m[K’:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:63:24:[m[K [01;31m[Kerror: [m[K‘[01m[KDestroyDriver[m[K’ is not a member of ‘[01m[Kydlidar::GSLidarDriver[m[K’
+   63 |         GSLidarDriver::[01;31m[KDestroyDriver[m[K(drv_);
+      |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In member function ‘[01m[Kvoid NodeGS::[01;32m[Ktick[m[K()[m[K’:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:72:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kydlidar::GSLidarDriver::grabScanData(LaserScan&)[m[K’
+   72 |     if (![01;31m[Kdrv_->grabScanData(scan)[m[K) return;
+      |          [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/local/include/src/GSLidarDriver.h:207:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual result_t ydlidar::GSLidarDriver::[01;32m[KgrabScanData[m[K(node_info*, size_t&, uint32_t)[m[K’
+  207 |     result_t [01;36m[KgrabScanData[m[K(node_info *nodebuffer, size_t &count,
+      |              [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/src/GSLidarDriver.h:207:14:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:73:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kydlidar::GSLidarDriver::ascendScanData(LaserScan&)[m[K’
+   73 |     [01;31m[Kdrv_->ascendScanData(scan)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/local/include/src/GSLidarDriver.h:220:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kresult_t ydlidar::GSLidarDriver::[01;32m[KascendScanData[m[K(node_info*, size_t)[m[K’
+  220 |     result_t [01;36m[KascendScanData[m[K(node_info *nodebuffer, size_t count);
+      |              [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/src/GSLidarDriver.h:220:14:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/gs2_node.dir/build.make:76: CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gs2_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

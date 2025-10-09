@@ -1,0 +1,16 @@
+/home/potato/ws/install/gs2_publisher/lib/gs2_publisher/gs2_node
+/home/potato/ws/install/gs2_publisher/share/ament_index/resource_index/package_run_dependencies/gs2_publisher
+/home/potato/ws/install/gs2_publisher/share/ament_index/resource_index/parent_prefix_path/gs2_publisher
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/environment/ament_prefix_path.sh
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/environment/ament_prefix_path.dsv
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/environment/path.sh
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/environment/path.dsv
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/local_setup.bash
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/local_setup.sh
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/local_setup.zsh
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/local_setup.dsv
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.dsv
+/home/potato/ws/install/gs2_publisher/share/ament_index/resource_index/packages/gs2_publisher
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/cmake/gs2_publisherConfig.cmake
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/cmake/gs2_publisherConfig-version.cmake
+/home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.xml

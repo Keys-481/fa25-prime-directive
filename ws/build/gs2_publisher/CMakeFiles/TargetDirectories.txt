@@ -1,0 +1,10 @@
+/home/potato/ws/build/gs2_publisher/CMakeFiles/uninstall.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/gs2_publisher_uninstall.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/gs2_node.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/test.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/edit_cache.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/rebuild_cache.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/list_install_components.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/install.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/install/local.dir
+/home/potato/ws/build/gs2_publisher/CMakeFiles/install/strip.dir

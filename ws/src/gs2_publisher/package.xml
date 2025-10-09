@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gs2_publisher</name>
+  <version>0.0.1</version>
+  <description>Publish LaserScan from YDLidar-SDK (GS2)</description>
+  <maintainer email="you@example.com">you</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+</package>

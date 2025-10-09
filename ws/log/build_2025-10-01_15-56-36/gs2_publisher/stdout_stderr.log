@@ -1,0 +1,193 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found ydlidar_sdk package
+[33mCMake Warning at CMakeLists.txt:27 (message):
+  ydlidar_sdk package found, but no target exported; falling back to manual
+  link
+
+[0m
+-- Configuring done (1.8s)
+-- Generating done (0.0s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+[0m
+-- Build files have been written to: /home/potato/ws/build/gs2_publisher
+[ 50%] [32mBuilding CXX object CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o[0m
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:13:16:[m[K [01;31m[Kerror: [m[K‘[01m[KCYdLidar[m[K’ has not been declared in ‘[01m[Kydlidar[m[K’
+   13 | using ydlidar::[01;31m[KCYdLidar[m[K;
+      |                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:14:16:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ has not been declared in ‘[01m[Kydlidar[m[K’
+   14 | using ydlidar::[01;31m[KLaserScan[m[K;
+      |                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In constructor ‘[01m[KGS2Node::[01;32m[KGS2Node[m[K()[m[K’:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:49:30:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropSerialPort[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropSerialPort[m[K’?
+   49 |     set_str(laser_, ydlidar::[01;31m[KLidarPropSerialPort[m[K, port_, get_logger());
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/src/CYdLidar.h:47[m[K,
+                 from [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:5[m[K:
+[01m[K/usr/local/include/core/common/ydlidar_def.h:62:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropSerialPort[m[K’ declared here
+   62 |   [01;36m[KLidarPropSerialPort[m[K = 0,/**< Lidar serial port or network ipaddress */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:51:30:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropIgnoreArray[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropIgnoreArray[m[K’?
+   51 |     set_str(laser_, ydlidar::[01;31m[KLidarPropIgnoreArray[m[K, ignore_array, get_logger());
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:63:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropIgnoreArray[m[K’ declared here
+   63 |   [01;36m[KLidarPropIgnoreArray[m[K,/**< Lidar ignore angle array */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:54:30:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropSerialBaudrate[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropSerialBaudrate[m[K’?
+   54 |     set_int(laser_, ydlidar::[01;31m[KLidarPropSerialBaudrate[m[K, baud_, get_logger());
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:65:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropSerialBaudrate[m[K’ declared here
+   65 |   [01;36m[KLidarPropSerialBaudrate[m[K = 10,/**< lidar serial baudrate or network port */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:55:31:[m[K [01;31m[Kerror: [m[K‘[01m[KTYPE_GS[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KTYPE_GS[m[K’?
+   55 |     int lidar_type = ydlidar::[01;31m[KTYPE_GS[m[K;
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:48:3:[m[K [01;36m[Knote: [m[K‘[01m[KTYPE_GS[m[K’ declared here
+   48 |   [01;36m[KTYPE_GS[m[K = 3, //GS series
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:56:30:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropLidarType[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropLidarType[m[K’?
+   56 |     set_int(laser_, ydlidar::[01;31m[KLidarPropLidarType[m[K, lidar_type, get_logger());
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:66:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropLidarType[m[K’ declared here
+   66 |   [01;36m[KLidarPropLidarType[m[K,/**< lidar type code */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:57:32:[m[K [01;31m[Kerror: [m[K‘[01m[KYDLIDAR_TYPE_SERIAL[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KYDLIDAR_TYPE_SERIAL[m[K’?
+   57 |     int device_type = ydlidar::[01;31m[KYDLIDAR_TYPE_SERIAL[m[K;
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:38:3:[m[K [01;36m[Knote: [m[K‘[01m[KYDLIDAR_TYPE_SERIAL[m[K’ declared here
+   38 |   [01;36m[KYDLIDAR_TYPE_SERIAL[m[K = 0x0, /**< serial type.*/
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:58:30:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropDeviceType[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropDeviceType[m[K’?
+   58 |     set_int(laser_, ydlidar::[01;31m[KLidarPropDeviceType[m[K, device_type, get_logger());
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:67:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropDeviceType[m[K’ declared here
+   67 |   [01;36m[KLidarPropDeviceType[m[K,/**< lidar connection type code */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:60:30:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropSampleRate[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropSampleRate[m[K’?
+   60 |     set_int(laser_, ydlidar::[01;31m[KLidarPropSampleRate[m[K, sample_rate, get_logger());
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:68:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropSampleRate[m[K’ declared here
+   68 |   [01;36m[KLidarPropSampleRate[m[K,/**< lidar sample rate */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:62:30:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropAbnormalCheckCount[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropAbnormalCheckCount[m[K’?
+   62 |     set_int(laser_, ydlidar::[01;31m[KLidarPropAbnormalCheckCount[m[K, abnormal_chk, get_logger());
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:69:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropAbnormalCheckCount[m[K’ declared here
+   69 |   [01;36m[KLidarPropAbnormalCheckCount[m[K,/**< abnormal maximum check times */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:64:30:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropIntenstiyBit[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropIntenstiyBit[m[K’?
+   64 |     set_int(laser_, ydlidar::[01;31m[KLidarPropIntenstiyBit[m[K, intensity_bits, get_logger());
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:70:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropIntenstiyBit[m[K’ declared here
+   70 |   [01;36m[KLidarPropIntenstiyBit[m[K,/**< lidar intensity bit count */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:67:31:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropFixedResolution[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropFixedResolution[m[K’?
+   67 |     set_bool(laser_, ydlidar::[01;31m[KLidarPropFixedResolution[m[K, false, get_logger());
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:78:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropFixedResolution[m[K’ declared here
+   78 |   [01;36m[KLidarPropFixedResolution[m[K = 30,/**< fixed angle resolution flag */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:68:31:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropReversion[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropReversion[m[K’?
+   68 |     set_bool(laser_, ydlidar::[01;31m[KLidarPropReversion[m[K,       false, get_logger());
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:79:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropReversion[m[K’ declared here
+   79 |   [01;36m[KLidarPropReversion[m[K,/**< lidar reversion flag */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:69:31:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropInverted[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropInverted[m[K’?
+   69 |     set_bool(laser_, ydlidar::[01;31m[KLidarPropInverted[m[K,        false, get_logger());
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:80:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropInverted[m[K’ declared here
+   80 |   [01;36m[KLidarPropInverted[m[K,/**< lidar inverted flag */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:70:31:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropAutoReconnect[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropAutoReconnect[m[K’?
+   70 |     set_bool(laser_, ydlidar::[01;31m[KLidarPropAutoReconnect[m[K,   true,  get_logger());
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:81:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropAutoReconnect[m[K’ declared here
+   81 |   [01;36m[KLidarPropAutoReconnect[m[K,/**< lidar hot plug flag */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:72:31:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropSingleChannel[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropSingleChannel[m[K’?
+   72 |     set_bool(laser_, ydlidar::[01;31m[KLidarPropSingleChannel[m[K,   isSingleChannel, get_logger());
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:82:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropSingleChannel[m[K’ declared here
+   82 |   [01;36m[KLidarPropSingleChannel[m[K,/**< lidar single-channel flag */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:73:31:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropIntenstiy[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropIntenstiy[m[K’?
+   73 |     set_bool(laser_, ydlidar::[01;31m[KLidarPropIntenstiy[m[K,       true,  get_logger());
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:83:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropIntenstiy[m[K’ declared here
+   83 |   [01;36m[KLidarPropIntenstiy[m[K,/**< lidar intensity flag */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:74:31:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropSupportMotorDtrCtrl[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropSupportMotorDtrCtrl[m[K’?
+   74 |     set_bool(laser_, ydlidar::[01;31m[KLidarPropSupportMotorDtrCtrl[m[K, true, get_logger());
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:84:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropSupportMotorDtrCtrl[m[K’ declared here
+   84 |   [01;36m[KLidarPropSupportMotorDtrCtrl[m[K,/**< lidar support motor Dtr ctrl flag */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:75:31:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropSupportHeartBeat[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropSupportHeartBeat[m[K’?
+   75 |     set_bool(laser_, ydlidar::[01;31m[KLidarPropSupportHeartBeat[m[K, false, get_logger());
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:85:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropSupportHeartBeat[m[K’ declared here
+   85 |   [01;36m[KLidarPropSupportHeartBeat[m[K,/**< lidar support heartbeat flag */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:78:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropMaxAngle[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropMaxAngle[m[K’?
+   78 |     set_float(laser_, ydlidar::[01;31m[KLidarPropMaxAngle[m[K,  180.0f, get_logger());
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:74:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropMaxAngle[m[K’ declared here
+   74 |   [01;36m[KLidarPropMaxAngle[m[K,/**< lidar maximum angle */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:79:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropMinAngle[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropMinAngle[m[K’?
+   79 |     set_float(laser_, ydlidar::[01;31m[KLidarPropMinAngle[m[K, -180.0f, get_logger());
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:75:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropMinAngle[m[K’ declared here
+   75 |   [01;36m[KLidarPropMinAngle[m[K,/**< lidar minimum angle */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:80:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropMaxRange[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropMaxRange[m[K’?
+   80 |     set_float(laser_, ydlidar::[01;31m[KLidarPropMaxRange[m[K,  static_cast<float>(rmax_), get_logger());   // 1.0 by default
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:72:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropMaxRange[m[K’ declared here
+   72 |   [01;36m[KLidarPropMaxRange[m[K = 20,/**< lidar maximum range */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:81:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropMinRange[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropMinRange[m[K’?
+   81 |     set_float(laser_, ydlidar::[01;31m[KLidarPropMinRange[m[K,  static_cast<float>(rmin_), get_logger());   // 0.025
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:73:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropMinRange[m[K’ declared here
+   73 |   [01;36m[KLidarPropMinRange[m[K,/**< lidar minimum range */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:83:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropScanFrequency[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[KLidarPropScanFrequency[m[K’?
+   83 |     set_float(laser_, ydlidar::[01;31m[KLidarPropScanFrequency[m[K, freq, get_logger());
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/core/common/ydlidar_def.h:76:3:[m[K [01;36m[Knote: [m[K‘[01m[KLidarPropScanFrequency[m[K’ declared here
+   76 |   [01;36m[KLidarPropScanFrequency[m[K,/**< lidar scanning frequency */
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gs2_node.dir/build.make:76: CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gs2_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
