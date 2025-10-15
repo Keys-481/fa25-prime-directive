@@ -1,0 +1,48 @@
+[0.016s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[0.131s] -- The C compiler identification is GNU 13.3.0
+[0.247s] -- The CXX compiler identification is GNU 13.3.0
+[0.274s] -- Detecting C compiler ABI info
+[0.444s] -- Detecting C compiler ABI info - done
+[0.459s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.459s] -- Detecting C compile features
+[0.459s] -- Detecting C compile features - done
+[0.473s] -- Detecting CXX compiler ABI info
+[0.661s] -- Detecting CXX compiler ABI info - done
+[0.676s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.676s] -- Detecting CXX compile features
+[0.677s] -- Detecting CXX compile features - done
+[0.679s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.919s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.089s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.132s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.149s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.170s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.193s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.291s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.294s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.327s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.410s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.651s] -- Configuring done (1.6s)
+[1.673s] [31mCMake Error at CMakeLists.txt:11 (target_link_libraries):
+[1.673s]   Target "gs2_node" links to:
+[1.673s] 
+[1.674s]     ydlidar_sdk::ydlidar_sdk
+[1.674s] 
+[1.674s]   but the target was not found.  Possible reasons include:
+[1.674s] 
+[1.674s]     * There is a typo in the target name.
+[1.674s]     * A find_package call is missing for an IMPORTED target.
+[1.674s]     * An ALIAS target is missing.
+[1.674s] 
+[1.674s] 
+[1.674s] [0m
+[1.674s] -- Generating done (0.0s)
+[1.681s] [33mCMake Warning:
+[1.682s]   Manually-specified variables were not used by the project:
+[1.682s] 
+[1.682s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.682s]     CATKIN_SYMLINK_INSTALL
+[1.682s] 
+[1.682s] [0m
+[1.682s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.703s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '1': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher

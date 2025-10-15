@@ -1,0 +1,63 @@
+[33mCMake Warning at CMakeLists.txt:27 (message):
+  ydlidar_sdk package found, but no target exported; falling back to manual
+  link
+
+[0m
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+[0m
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:1:29:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+    1 | #include <rclcpp/rclcpp.hpp>[01;35m[K)[m[K
+      |                             [01;35m[K^[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:96:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   96 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:20:37:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   20 | class GS2Node : public rclcpp::Node [01;36m[K{[m[K
+      |                                     [01;36m[K^[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In constructor ‘[01m[KGS2Node::[01;32m[KGS2Node[m[K()[m[K’:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kport_[m[K’ was not declared in this scope
+   23 |     [01;31m[Kport_[m[K     = this->declare_parameter<std::string>("port", "/dev/ttyUSB0");
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:24:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaud_[m[K’ was not declared in this scope
+   24 |     [01;31m[Kbaud_[m[K     = this->declare_parameter<int>("baudrate", 921600);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_id_[m[K’ was not declared in this scope
+   25 |     [01;31m[Kframe_id_[m[K = this->declare_parameter<std::string>("frame_id", "laser_frame");
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kamin_deg_[m[K’ was not declared in this scope
+   26 |     [01;31m[Kamin_deg_[m[K = this->declare_parameter<double>("angle_min_deg", -50.0);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kamax_deg_[m[K’ was not declared in this scope
+   27 |     [01;31m[Kamax_deg_[m[K = this->declare_parameter<double>("angle_max_deg",  50.0);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krmin_[m[K’ was not declared in this scope
+   28 |     [01;31m[Krmin_[m[K     = this->declare_parameter<double>("range_min", 0.025);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krmax_[m[K’ was not declared in this scope
+   29 |     [01;31m[Krmax_[m[K     = this->declare_parameter<double>("range_max", 0.30);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ was not declared in this scope
+   31 |     [01;31m[Kpub_[m[K = this->create_publisher<sensor_msgs::msg::LaserScan>("/scan", 10);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:34:18:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_[m[K’ was not declared in this scope
+   34 |     set_str_prop([01;31m[Klaser_[m[K, LidarPropSerialPort, port_, get_logger());
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:36:27:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropHeartBeat[m[K’ was not declared in this scope; did you mean ‘[01m[KLidarProperty[m[K’?
+   36 |     set_bool_prop(laser_, [01;31m[KLidarPropHeartBeat[m[K, false, get_logger());
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                           [32m[KLidarProperty[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:49:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+   49 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K At global scope:
+[01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:96:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   96 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/gs2_node.dir/build.make:76: CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gs2_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

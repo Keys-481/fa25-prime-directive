@@ -1,0 +1,46 @@
+[0.016s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[0.132s] -- The C compiler identification is GNU 13.3.0
+[0.251s] -- The CXX compiler identification is GNU 13.3.0
+[0.278s] -- Detecting C compiler ABI info
+[0.448s] -- Detecting C compiler ABI info - done
+[0.463s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.464s] -- Detecting C compile features
+[0.464s] -- Detecting C compile features - done
+[0.479s] -- Detecting CXX compiler ABI info
+[0.667s] -- Detecting CXX compiler ABI info - done
+[0.682s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.682s] -- Detecting CXX compile features
+[0.683s] -- Detecting CXX compile features - done
+[0.686s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.927s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.100s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.144s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.162s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.183s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.206s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.305s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.308s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.342s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.426s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.500s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.653s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.655s] -- Found Threads: TRUE  
+[1.657s] -- Found ydlidar_sdk package
+[1.658s] [33mCMake Warning at CMakeLists.txt:28 (message):
+[1.658s]   ydlidar_sdk package found, but no target exported; falling back to manual
+[1.658s]   link
+[1.658s] 
+[1.658s] [0m
+[1.658s] [31mCMake Error at CMakeLists.txt:30 (target_link_libraries):
+[1.658s]   The plain signature for target_link_libraries has already been used with
+[1.658s]   the target "gs2_node".  All uses of target_link_libraries with a target
+[1.658s]   must be either all-keyword or all-plain.
+[1.658s] 
+[1.658s]   The uses of the plain signature are here:
+[1.659s] 
+[1.659s]    * /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:146 (target_link_libraries)
+[1.659s] 
+[1.659s] 
+[1.659s] [0m
+[1.824s] -- Configuring incomplete, errors occurred!
+[1.846s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '1': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher

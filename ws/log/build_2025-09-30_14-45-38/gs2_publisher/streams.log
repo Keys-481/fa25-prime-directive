@@ -1,0 +1,28 @@
+[0.016s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[0.038s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.385s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.415s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.428s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.444s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.462s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.543s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.545s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.571s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.644s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.860s] -- Configuring done (0.8s)
+[0.881s] [31mCMake Error at CMakeLists.txt:11 (target_link_libraries):
+[0.882s]   Target "gs2_node" links to:
+[0.882s] 
+[0.882s]     ydlidar_sdk::ydlidar_sdk
+[0.882s] 
+[0.882s]   but the target was not found.  Possible reasons include:
+[0.882s] 
+[0.882s]     * There is a typo in the target name.
+[0.882s]     * A find_package call is missing for an IMPORTED target.
+[0.882s]     * An ALIAS target is missing.
+[0.882s] 
+[0.882s] 
+[0.882s] [0m
+[0.883s] -- Generating done (0.0s)
+[0.890s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.901s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '1': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher

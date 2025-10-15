@@ -1,0 +1,128 @@
+[0.016s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[0.134s] -- The C compiler identification is GNU 13.3.0
+[0.252s] -- The CXX compiler identification is GNU 13.3.0
+[0.279s] -- Detecting C compiler ABI info
+[0.450s] -- Detecting C compiler ABI info - done
+[0.465s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.465s] -- Detecting C compile features
+[0.466s] -- Detecting C compile features - done
+[0.480s] -- Detecting CXX compiler ABI info
+[0.668s] -- Detecting CXX compiler ABI info - done
+[0.684s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.684s] -- Detecting CXX compile features
+[0.685s] -- Detecting CXX compile features - done
+[0.687s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.927s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.097s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.139s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.156s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.177s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.200s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.296s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.300s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.333s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.416s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.490s] -- Found ydlidar_sdk package
+[1.490s] [33mCMake Warning at CMakeLists.txt:27 (message):
+[1.490s]   ydlidar_sdk package found, but no target exported; falling back to manual
+[1.491s]   link
+[1.491s] 
+[1.491s] [0m
+[1.653s] -- Configuring done (1.6s)
+[1.676s] -- Generating done (0.0s)
+[1.684s] [33mCMake Warning:
+[1.684s]   Manually-specified variables were not used by the project:
+[1.684s] 
+[1.685s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.685s]     CATKIN_SYMLINK_INSTALL
+[1.685s] 
+[1.685s] [0m
+[1.688s] -- Build files have been written to: /home/potato/ws/build/gs2_publisher
+[1.708s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[1.711s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4
+[1.798s] [ 50%] [32mBuilding CXX object CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o[0m
+[4.984s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:11:16:[m[K [01;31m[Kerror: [m[K‘[01m[KCYdLidar[m[K’ has not been declared in ‘[01m[Kydlidar[m[K’
+[4.984s]    11 | using ydlidar::[01;31m[KCYdLidar[m[K;
+[4.984s]       |                [01;31m[K^~~~~~~~[m[K
+[4.985s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:12:16:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ has not been declared in ‘[01m[Kydlidar[m[K’
+[4.985s]    12 | using ydlidar::[01;31m[KLaserScan[m[K;
+[4.985s]       |                [01;31m[K^~~~~~~~~[m[K
+[4.997s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In constructor ‘[01m[KGS2Node::[01;32m[KGS2Node[m[K()[m[K’:
+[4.998s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:29:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetSerialPort[m[K’; did you mean ‘[01m[Kstd::string CYdLidar::m_SerialPort[m[K’? (not accessible from this context)
+[4.998s]    29 |     laser_.[01;31m[KsetSerialPort[m[K(port_.c_str());
+[4.998s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[4.998s] In file included from [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:4[m[K:
+[4.998s] [01m[K/usr/local/include/src/CYdLidar.h:342:15:[m[K [01;36m[Knote: [m[Kdeclared private here
+[4.998s]   342 |   std::string [01;36m[Km_SerialPort[m[K;         ///< LiDAR serial port
+[4.998s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[4.998s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:30:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetSerialBaudrate[m[K’; did you mean ‘[01m[Kint CYdLidar::m_SerialBaudrate[m[K’? (not accessible from this context)
+[4.998s]    30 |     laser_.[01;31m[KsetSerialBaudrate[m[K(baud_);
+[4.998s]       |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.999s] [01m[K/usr/local/include/src/CYdLidar.h:357:7:[m[K [01;36m[Knote: [m[Kdeclared private here
+[4.999s]   357 |   int [01;36m[Km_SerialBaudrate[m[K;             ///< LiDAR serial baudrate or network port
+[4.999s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[4.999s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:31:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetLidarType[m[K’; did you mean ‘[01m[Kint CYdLidar::m_LidarType[m[K’? (not accessible from this context)
+[4.999s]    31 |     laser_.[01;31m[KsetLidarType[m[K(TYPE_TOF);
+[4.999s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[4.999s] [01m[K/usr/local/include/src/CYdLidar.h:358:7:[m[K [01;36m[Knote: [m[Kdeclared private here
+[4.999s]   358 |   int [01;36m[Km_LidarType[m[K;                  ///< LiDAR type
+[4.999s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[4.999s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:32:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetDeviceType[m[K’; did you mean ‘[01m[Kint CYdLidar::m_DeviceType[m[K’? (not accessible from this context)
+[4.999s]    32 |     laser_.[01;31m[KsetDeviceType[m[K(DEVICE_TYPE_SERIAL);
+[4.999s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[4.999s] [01m[K/usr/local/include/src/CYdLidar.h:359:7:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.000s]   359 |   int [01;36m[Km_DeviceType[m[K;                 ///< LiDAR device type
+[5.000s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[5.015s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:32:26:[m[K [01;31m[Kerror: [m[K‘[01m[KDEVICE_TYPE_SERIAL[m[K’ was not declared in this scope; did you mean ‘[01m[KYDLIDAR_TYPE_SERIAL[m[K’?
+[5.015s]    32 |     laser_.setDeviceType([01;31m[KDEVICE_TYPE_SERIAL[m[K);
+[5.015s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.016s]       |                          [32m[KYDLIDAR_TYPE_SERIAL[m[K
+[5.016s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:33:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetFixedResolution[m[K’; did you mean ‘[01m[Kbool CYdLidar::m_FixedResolution[m[K’? (not accessible from this context)
+[5.016s]    33 |     laser_.[01;31m[KsetFixedResolution[m[K(false);
+[5.016s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.016s] [01m[K/usr/local/include/src/CYdLidar.h:346:8:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.016s]   346 |   bool [01;36m[Km_FixedResolution[m[K;           ///< LiDAR fixed angle resolution
+[5.016s]       |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.016s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:34:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetReversion[m[K’; did you mean ‘[01m[Kbool CYdLidar::m_Reversion[m[K’? (not accessible from this context)
+[5.016s]    34 |     laser_.[01;31m[KsetReversion[m[K(false);
+[5.016s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[5.017s] [01m[K/usr/local/include/src/CYdLidar.h:347:8:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.017s]   347 |   bool [01;36m[Km_Reversion[m[K;                 ///< LiDAR reversion
+[5.017s]       |        [01;36m[K^~~~~~~~~~~[m[K
+[5.017s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:35:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetSingleChannel[m[K’; did you mean ‘[01m[Kbool CYdLidar::m_SingleChannel[m[K’? (not accessible from this context)
+[5.017s]    35 |     laser_.[01;31m[KsetSingleChannel[m[K(true);
+[5.017s]       |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.017s] [01m[K/usr/local/include/src/CYdLidar.h:350:8:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.017s]   350 |   bool [01;36m[Km_SingleChannel[m[K;             ///< LiDAR single channel
+[5.017s]       |        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[5.017s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:36:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetIntensity[m[K’; did you mean ‘[01m[Kbool CYdLidar::m_Intensity[m[K’? (not accessible from this context)
+[5.017s]    36 |     laser_.[01;31m[KsetIntensity[m[K(false);
+[5.017s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[5.017s] [01m[K/usr/local/include/src/CYdLidar.h:351:8:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.018s]   351 |   bool [01;36m[Km_Intensity[m[K;                 ///< LiDAR Intensity
+[5.018s]       |        [01;36m[K^~~~~~~~~~~[m[K
+[5.018s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:37:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetSupportMotorDTR[m[K’
+[5.018s]    37 |     laser_.[01;31m[KsetSupportMotorDTR[m[K(false);
+[5.018s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.018s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:38:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetIgnoreArray[m[K’; did you mean ‘[01m[Kstd::vector<float> CYdLidar::m_IgnoreArray[m[K’? (not accessible from this context)
+[5.018s]    38 |     laser_.[01;31m[KsetIgnoreArray[m[K("");   // no ignored angles
+[5.018s]       |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.018s] [01m[K/usr/local/include/src/CYdLidar.h:344:22:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.018s]   344 |   std::vector<float> [01;36m[Km_IgnoreArray[m[K; ///< LiDAR ignore array
+[5.018s]       |                      [01;36m[K^~~~~~~~~~~~~[m[K
+[5.018s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:39:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetMaxRange[m[K’; did you mean ‘[01m[Kfloat CYdLidar::m_MaxRange[m[K’? (not accessible from this context)
+[5.018s]    39 |     laser_.[01;31m[KsetMaxRange[m[K(range_max_);
+[5.018s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[5.019s] [01m[K/usr/local/include/src/CYdLidar.h:366:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.019s]   366 |   float [01;36m[Km_MaxRange[m[K;                 ///< LiDAR maximum range
+[5.019s]       |         [01;36m[K^~~~~~~~~~[m[K
+[5.019s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:40:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CYdLidar[m[K’ has no member named ‘[01m[KsetMinRange[m[K’; did you mean ‘[01m[Kfloat CYdLidar::m_MinRange[m[K’? (not accessible from this context)
+[5.019s]    40 |     laser_.[01;31m[KsetMinRange[m[K(range_min_);
+[5.019s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[5.019s] [01m[K/usr/local/include/src/CYdLidar.h:367:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.019s]   367 |   float [01;36m[Km_MinRange[m[K;                 ///< LiDAR minimum range
+[5.019s]       |         [01;36m[K^~~~~~~~~~[m[K
+[6.460s] gmake[2]: *** [CMakeFiles/gs2_node.dir/build.make:76: CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o] Error 1
+[6.460s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gs2_node.dir/all] Error 2
+[6.460s] gmake: *** [Makefile:146: all] Error 2
+[6.464s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '2': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4
