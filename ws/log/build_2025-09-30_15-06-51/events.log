@@ -1,0 +1,221 @@
+[0.000000] (-) TimerEvent: {}
+[0.000248] (gs2_publisher) JobQueued: {'identifier': 'gs2_publisher', 'dependencies': OrderedDict()}
+[0.000418] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.000723] (gs2_publisher) JobStarted: {'identifier': 'gs2_publisher'}
+[0.007166] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.012505] (gs2_publisher) JobProgress: {'identifier': 'gs2_publisher', 'progress': 'cmake'}
+[0.013956] (gs2_publisher) Command: {'cmd': ['/usr/bin/cmake', '/home/potato/ws/src/gs2_publisher', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher'], 'cwd': '/home/potato/ws/build/gs2_publisher', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'potato', 'SSH_CLIENT': '192.168.0.169 49918 22', 'LC_TIME': 'C.UTF-8', 'ROS_PACKAGE_PATH': '/home/potato/ws/install/gs2_publisher/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/potato', 'OLDPWD': '/home/potato/ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/potato/ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'potato', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/potato/ws/install/gs2_publisher/lib/aarch64-linux-gnu/pkgconfig:/home/potato/ws/install/gs2_publisher/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ydlidar_sdk_DIR': '/home/potato/YDLidar-SDK/build', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/potato/ws/install/ydlidar_ros2_driver:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/potato/ws/build/gs2_publisher', 'SSH_CONNECTION': '192.168.0.169 49918 192.168.0.206 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/usr/local:/home/potato/ws/install/ydlidar_ros2_driver'}), 'shell': False}
+[0.019521] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[0.021092] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/potato/ws/src/ydlidar_ros2_driver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver'], 'cwd': '/home/potato/ws/build/ydlidar_ros2_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'potato', 'SSH_CLIENT': '192.168.0.169 49918 22', 'LC_TIME': 'C.UTF-8', 'ROS_PACKAGE_PATH': '/home/potato/ws/install/gs2_publisher/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/potato', 'OLDPWD': '/home/potato/ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/potato/ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'potato', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/potato/ws/install/gs2_publisher/lib/aarch64-linux-gnu/pkgconfig:/home/potato/ws/install/gs2_publisher/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ydlidar_sdk_DIR': '/home/potato/YDLidar-SDK/build', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/potato/ws/install/ydlidar_ros2_driver:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/potato/ws/build/ydlidar_ros2_driver', 'SSH_CONNECTION': '192.168.0.169 49918 192.168.0.206 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/usr/local:/home/potato/ws/install/ydlidar_ros2_driver:/opt/ros/jazzy'}), 'shell': False}
+[0.099769] (-) TimerEvent: {}
+[0.135609] (gs2_publisher) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.136321] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199928] (-) TimerEvent: {}
+[0.253925] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.254241] (gs2_publisher) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.282205] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.282523] (gs2_publisher) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300045] (-) TimerEvent: {}
+[0.400476] (-) TimerEvent: {}
+[0.452620] (gs2_publisher) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.452880] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.467483] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.467843] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.468111] (gs2_publisher) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.468414] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.468554] (gs2_publisher) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.469117] (gs2_publisher) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.481772] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.482125] (gs2_publisher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500570] (-) TimerEvent: {}
+[0.600940] (-) TimerEvent: {}
+[0.668953] (gs2_publisher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.669198] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.684041] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.684448] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.684813] (gs2_publisher) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.685134] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.685289] (gs2_publisher) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.685988] (gs2_publisher) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.688105] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.688714] (gs2_publisher) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.701016] (-) TimerEvent: {}
+[0.801350] (-) TimerEvent: {}
+[0.901911] (-) TimerEvent: {}
+[0.927185] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.927530] (gs2_publisher) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.002039] (-) TimerEvent: {}
+[1.066918] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.092102] (gs2_publisher) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.099154] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.102108] (-) TimerEvent: {}
+[1.136328] (gs2_publisher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.141545] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.154477] (gs2_publisher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.158701] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.175815] (gs2_publisher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.179081] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.200070] (gs2_publisher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.202190] (-) TimerEvent: {}
+[1.202385] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.298469] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.299903] (gs2_publisher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.301681] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.302257] (-) TimerEvent: {}
+[1.303298] (gs2_publisher) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.334764] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.337502] (gs2_publisher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.402369] (-) TimerEvent: {}
+[1.418436] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.423809] (gs2_publisher) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.494019] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[1.501283] (gs2_publisher) StdoutLine: {'line': b'-- Found ydlidar_sdk package\n'}
+[1.501516] (gs2_publisher) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:27 (message):\n'}
+[1.501673] (gs2_publisher) StderrLine: {'line': b'  ydlidar_sdk package found, but no target exported; falling back to manual\n'}
+[1.501771] (gs2_publisher) StderrLine: {'line': b'  link\n'}
+[1.501846] (gs2_publisher) StderrLine: {'line': b'\n'}
+[1.501933] (gs2_publisher) StderrLine: {'line': b'\x1b[0m\n'}
+[1.502432] (-) TimerEvent: {}
+[1.532516] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[1.563454] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.602560] (-) TimerEvent: {}
+[1.663726] (gs2_publisher) StdoutLine: {'line': b'-- Configuring done (1.6s)\n'}
+[1.685136] (gs2_publisher) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.687275] (gs2_publisher) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[1.687412] (gs2_publisher) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[1.687498] (gs2_publisher) StderrLine: {'line': b'\n'}
+[1.687592] (gs2_publisher) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[1.687741] (gs2_publisher) StderrLine: {'line': b'    CATKIN_SYMLINK_INSTALL\n'}
+[1.687845] (gs2_publisher) StderrLine: {'line': b'\n'}
+[1.687923] (gs2_publisher) StderrLine: {'line': b'\x1b[0m\n'}
+[1.693471] (gs2_publisher) StdoutLine: {'line': b'-- Build files have been written to: /home/potato/ws/build/gs2_publisher\n'}
+[1.702700] (-) TimerEvent: {}
+[1.715839] (gs2_publisher) CommandEnded: {'returncode': 0}
+[1.716676] (gs2_publisher) JobProgress: {'identifier': 'gs2_publisher', 'progress': 'build'}
+[1.717539] (gs2_publisher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/potato/ws/build/gs2_publisher', '--', '-j4', '-l4'], 'cwd': '/home/potato/ws/build/gs2_publisher', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'potato', 'SSH_CLIENT': '192.168.0.169 49918 22', 'LC_TIME': 'C.UTF-8', 'ROS_PACKAGE_PATH': '/home/potato/ws/install/gs2_publisher/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/potato', 'OLDPWD': '/home/potato/ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/potato/ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'potato', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/potato/ws/install/gs2_publisher/lib/aarch64-linux-gnu/pkgconfig:/home/potato/ws/install/gs2_publisher/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ydlidar_sdk_DIR': '/home/potato/YDLidar-SDK/build', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/potato/ws/install/ydlidar_ros2_driver:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/potato/ws/build/gs2_publisher', 'SSH_CONNECTION': '192.168.0.169 49918 192.168.0.206 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/usr/local:/home/potato/ws/install/ydlidar_ros2_driver'}), 'shell': False}
+[1.766081] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.771923] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.772469] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/potato/ws/src/ydlidar_ros2_driver/src\n'}
+[1.772588] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.778010] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.778297] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.779375] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.781752] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[1.781958] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.782684] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.787910] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.788082] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.789197] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.790981] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configuring done (1.8s)\n'}
+[1.802810] (-) TimerEvent: {}
+[1.816940] (gs2_publisher) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o\x1b[0m\n'}
+[1.828896] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.847780] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/potato/ws/build/ydlidar_ros2_driver\n'}
+[1.864612] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[1.865271] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[1.865605] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/potato/ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/potato/ws/build/ydlidar_ros2_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'potato', 'SSH_CLIENT': '192.168.0.169 49918 22', 'LC_TIME': 'C.UTF-8', 'ROS_PACKAGE_PATH': '/home/potato/ws/install/gs2_publisher/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/potato', 'OLDPWD': '/home/potato/ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/potato/ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'potato', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/potato/ws/install/gs2_publisher/lib/aarch64-linux-gnu/pkgconfig:/home/potato/ws/install/gs2_publisher/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ydlidar_sdk_DIR': '/home/potato/YDLidar-SDK/build', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/potato/ws/install/ydlidar_ros2_driver:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/potato/ws/build/ydlidar_ros2_driver', 'SSH_CONNECTION': '192.168.0.169 49918 192.168.0.206 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/usr/local:/home/potato/ws/install/ydlidar_ros2_driver:/opt/ros/jazzy'}), 'shell': False}
+[1.902950] (-) TimerEvent: {}
+[1.968824] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_client\n'}
+[1.976630] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_node\n'}
+[1.995665] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[1.996402] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[2.003048] (-) TimerEvent: {}
+[2.013191] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/potato/ws/build/ydlidar_ros2_driver'], 'cwd': '/home/potato/ws/build/ydlidar_ros2_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'potato', 'SSH_CLIENT': '192.168.0.169 49918 22', 'LC_TIME': 'C.UTF-8', 'ROS_PACKAGE_PATH': '/home/potato/ws/install/gs2_publisher/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/potato', 'OLDPWD': '/home/potato/ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/potato/ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'potato', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/potato/ws/install/gs2_publisher/lib/aarch64-linux-gnu/pkgconfig:/home/potato/ws/install/gs2_publisher/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ydlidar_sdk_DIR': '/home/potato/YDLidar-SDK/build', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/potato/ws/install/ydlidar_ros2_driver:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/potato/ws/build/ydlidar_ros2_driver', 'SSH_CONNECTION': '192.168.0.169 49918 192.168.0.206 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/usr/local:/home/potato/ws/install/ydlidar_ros2_driver:/opt/ros/jazzy'}), 'shell': False}
+[2.026689] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.027311] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.028011] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[2.028235] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[2.028706] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[2.028856] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[2.028995] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[2.029423] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml\n'}
+[2.029551] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml\n'}
+[2.029689] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml\n'}
+[2.029822] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml\n'}
+[2.029973] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml\n'}
+[2.030124] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml\n'}
+[2.030250] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml\n'}
+[2.030357] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml\n'}
+[2.030482] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml\n'}
+[2.030601] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml\n'}
+[2.030764] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml\n'}
+[2.030900] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml\n'}
+[2.031025] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml\n'}
+[2.031153] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml\n'}
+[2.031280] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml\n'}
+[2.031403] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[2.031733] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[2.032007] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[2.032250] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[2.032524] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[2.032799] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[2.033010] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[2.033226] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[2.033427] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[2.033622] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[2.033850] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[2.034049] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[2.034246] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[2.034393] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[2.050068] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[2.050296] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[2.050420] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[2.050543] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[2.053689] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[2.080577] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[2.103148] (-) TimerEvent: {}
+[2.203448] (-) TimerEvent: {}
+[2.303739] (-) TimerEvent: {}
+[2.404030] (-) TimerEvent: {}
+[2.504323] (-) TimerEvent: {}
+[2.604608] (-) TimerEvent: {}
+[2.704922] (-) TimerEvent: {}
+[2.805195] (-) TimerEvent: {}
+[2.905481] (-) TimerEvent: {}
+[3.005759] (-) TimerEvent: {}
+[3.106065] (-) TimerEvent: {}
+[3.206358] (-) TimerEvent: {}
+[3.306668] (-) TimerEvent: {}
+[3.406962] (-) TimerEvent: {}
+[3.507241] (-) TimerEvent: {}
+[3.607528] (-) TimerEvent: {}
+[3.707838] (-) TimerEvent: {}
+[3.808126] (-) TimerEvent: {}
+[3.908416] (-) TimerEvent: {}
+[4.008691] (-) TimerEvent: {}
+[4.108978] (-) TimerEvent: {}
+[4.209271] (-) TimerEvent: {}
+[4.309547] (-) TimerEvent: {}
+[4.409829] (-) TimerEvent: {}
+[4.510109] (-) TimerEvent: {}
+[4.610378] (-) TimerEvent: {}
+[4.710727] (-) TimerEvent: {}
+[4.811044] (-) TimerEvent: {}
+[4.911355] (-) TimerEvent: {}
+[5.011660] (-) TimerEvent: {}
+[5.091496] (gs2_publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KGS2Node::\x1b[01;32m\x1b[KGS2Node\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.091748] (gs2_publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:41:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLidarPropSupportMotorDtr\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KLidarPropSupportMotorDtrCtrl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.091842] (gs2_publisher) StderrLine: {'line': b'   41 |     set_bool_prop(laser_, \x1b[01;31m\x1b[KLidarPropSupportMotorDtr\x1b[m\x1b[K,false, get_logger());\n'}
+[5.091921] (gs2_publisher) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.091999] (gs2_publisher) StderrLine: {'line': b'      |                           \x1b[32m\x1b[KLidarPropSupportMotorDtrCtrl\x1b[m\x1b[K\n'}
+[5.111723] (-) TimerEvent: {}
+[5.211983] (-) TimerEvent: {}
+[5.312291] (-) TimerEvent: {}
+[5.412590] (-) TimerEvent: {}
+[5.512900] (-) TimerEvent: {}
+[5.613175] (-) TimerEvent: {}
+[5.713471] (-) TimerEvent: {}
+[5.813770] (-) TimerEvent: {}
+[5.914059] (-) TimerEvent: {}
+[6.014341] (-) TimerEvent: {}
+[6.114672] (-) TimerEvent: {}
+[6.214971] (-) TimerEvent: {}
+[6.315265] (-) TimerEvent: {}
+[6.415544] (-) TimerEvent: {}
+[6.515910] (-) TimerEvent: {}
+[6.533176] (gs2_publisher) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/gs2_node.dir/build.make:76: CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o] Error 1\n'}
+[6.533478] (gs2_publisher) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gs2_node.dir/all] Error 2\n'}
+[6.533753] (gs2_publisher) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.536999] (gs2_publisher) CommandEnded: {'returncode': 2}
+[6.559157] (gs2_publisher) JobEnded: {'identifier': 'gs2_publisher', 'rc': 2}
+[6.569609] (-) EventReactorShutdown: {}

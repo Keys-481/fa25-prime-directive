@@ -1,0 +1,95 @@
+[0.066s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[0.183s] -- The C compiler identification is GNU 13.3.0
+[0.301s] -- The CXX compiler identification is GNU 13.3.0
+[0.329s] -- Detecting C compiler ABI info
+[0.497s] -- Detecting C compiler ABI info - done
+[0.512s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.513s] -- Detecting C compile features
+[0.513s] -- Detecting C compile features - done
+[0.527s] -- Detecting CXX compiler ABI info
+[0.716s] -- Detecting CXX compiler ABI info - done
+[0.731s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.731s] -- Detecting CXX compile features
+[0.732s] -- Detecting CXX compile features - done
+[0.734s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.975s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.147s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.192s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.210s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.231s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.255s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.354s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.357s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.391s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.476s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.553s] -- Found ydlidar_sdk package
+[1.553s] [33mCMake Warning at CMakeLists.txt:27 (message):
+[1.553s]   ydlidar_sdk package found, but no target exported; falling back to manual
+[1.553s]   link
+[1.553s] 
+[1.553s] [0m
+[1.716s] -- Configuring done (1.6s)
+[1.742s] -- Generating done (0.0s)
+[1.750s] [33mCMake Warning:
+[1.750s]   Manually-specified variables were not used by the project:
+[1.750s] 
+[1.751s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.751s]     CATKIN_SYMLINK_INSTALL
+[1.751s] 
+[1.751s] [0m
+[1.755s] -- Build files have been written to: /home/potato/ws/build/gs2_publisher
+[1.774s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[1.776s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4
+[1.872s] [ 50%] [32mBuilding CXX object CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o[0m
+[1.892s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:1:29:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+[1.893s]     1 | #include <rclcpp/rclcpp.hpp>[01;35m[K)[m[K
+[1.893s]       |                             [01;35m[K^[m[K
+[5.028s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:96:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[5.028s]    96 | }
+[5.028s]       |  [01;31m[K^[m[K
+[5.028s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:20:37:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[5.028s]    20 | class GS2Node : public rclcpp::Node [01;36m[K{[m[K
+[5.028s]       |                                     [01;36m[K^[m[K
+[5.039s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In constructor ‘[01m[KGS2Node::[01;32m[KGS2Node[m[K()[m[K’:
+[5.039s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kport_[m[K’ was not declared in this scope
+[5.039s]    23 |     [01;31m[Kport_[m[K     = this->declare_parameter<std::string>("port", "/dev/ttyUSB0");
+[5.039s]       |     [01;31m[K^~~~~[m[K
+[5.050s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:24:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaud_[m[K’ was not declared in this scope
+[5.050s]    24 |     [01;31m[Kbaud_[m[K     = this->declare_parameter<int>("baudrate", 921600);
+[5.050s]       |     [01;31m[K^~~~~[m[K
+[5.062s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_id_[m[K’ was not declared in this scope
+[5.062s]    25 |     [01;31m[Kframe_id_[m[K = this->declare_parameter<std::string>("frame_id", "laser_frame");
+[5.063s]       |     [01;31m[K^~~~~~~~~[m[K
+[5.074s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kamin_deg_[m[K’ was not declared in this scope
+[5.074s]    26 |     [01;31m[Kamin_deg_[m[K = this->declare_parameter<double>("angle_min_deg", -50.0);
+[5.074s]       |     [01;31m[K^~~~~~~~~[m[K
+[5.087s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kamax_deg_[m[K’ was not declared in this scope
+[5.087s]    27 |     [01;31m[Kamax_deg_[m[K = this->declare_parameter<double>("angle_max_deg",  50.0);
+[5.087s]       |     [01;31m[K^~~~~~~~~[m[K
+[5.096s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krmin_[m[K’ was not declared in this scope
+[5.097s]    28 |     [01;31m[Krmin_[m[K     = this->declare_parameter<double>("range_min", 0.025);
+[5.097s]       |     [01;31m[K^~~~~[m[K
+[5.106s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krmax_[m[K’ was not declared in this scope
+[5.106s]    29 |     [01;31m[Krmax_[m[K     = this->declare_parameter<double>("range_max", 0.30);
+[5.106s]       |     [01;31m[K^~~~~[m[K
+[5.116s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ was not declared in this scope
+[5.116s]    31 |     [01;31m[Kpub_[m[K = this->create_publisher<sensor_msgs::msg::LaserScan>("/scan", 10);
+[5.116s]       |     [01;31m[K^~~~[m[K
+[5.130s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:34:18:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_[m[K’ was not declared in this scope
+[5.130s]    34 |     set_str_prop([01;31m[Klaser_[m[K, LidarPropSerialPort, port_, get_logger());
+[5.130s]       |                  [01;31m[K^~~~~~[m[K
+[5.146s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:36:27:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarPropHeartBeat[m[K’ was not declared in this scope; did you mean ‘[01m[KLidarProperty[m[K’?
+[5.146s]    36 |     set_bool_prop(laser_, [01;31m[KLidarPropHeartBeat[m[K, false, get_logger());
+[5.147s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.147s]       |                           [32m[KLidarProperty[m[K
+[5.148s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:49:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[5.148s]    49 | [01;31m[Kprivate[m[K:
+[5.148s]       | [01;31m[K^~~~~~~[m[K
+[5.157s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K At global scope:
+[5.157s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:96:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[5.157s]    96 | }
+[5.157s]       |  [01;31m[K^[m[K
+[6.367s] gmake[2]: *** [CMakeFiles/gs2_node.dir/build.make:76: CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o] Error 1
+[6.367s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gs2_node.dir/all] Error 2
+[6.367s] gmake: *** [Makefile:146: all] Error 2
+[6.370s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '2': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4

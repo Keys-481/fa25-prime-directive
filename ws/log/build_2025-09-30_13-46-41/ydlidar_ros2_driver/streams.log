@@ -1,0 +1,45 @@
+[0.011s] Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver
+[0.110s] -- The C compiler identification is GNU 13.3.0
+[0.222s] -- The CXX compiler identification is GNU 13.3.0
+[0.247s] -- Detecting C compiler ABI info
+[0.399s] -- Detecting C compiler ABI info - done
+[0.414s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.414s] -- Detecting C compile features
+[0.415s] -- Detecting C compile features - done
+[0.429s] -- Detecting CXX compiler ABI info
+[0.596s] -- Detecting CXX compiler ABI info - done
+[0.611s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.612s] -- Detecting CXX compile features
+[0.612s] -- Detecting CXX compile features - done
+[0.615s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.820s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.962s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.001s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.018s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.037s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.059s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.151s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.154s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.191s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.277s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.350s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[1.387s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[1.415s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[1.415s]   By not providing "Findydlidar_sdk.cmake" in CMAKE_MODULE_PATH this project
+[1.415s]   has asked CMake to find a package configuration file provided by
+[1.415s]   "ydlidar_sdk", but CMake did not find one.
+[1.415s] 
+[1.415s]   Could not find a package configuration file provided by "ydlidar_sdk" with
+[1.415s]   any of the following names:
+[1.416s] 
+[1.416s]     ydlidar_sdkConfig.cmake
+[1.416s]     ydlidar_sdk-config.cmake
+[1.416s] 
+[1.416s]   Add the installation prefix of "ydlidar_sdk" to CMAKE_PREFIX_PATH or set
+[1.416s]   "ydlidar_sdk_DIR" to a directory containing one of the above files.  If
+[1.416s]   "ydlidar_sdk" provides a separate development package or SDK, be sure it
+[1.416s]   has been installed.
+[1.416s] 
+[1.416s] [0m
+[1.416s] -- Configuring incomplete, errors occurred!
+[1.430s] Invoked command in '/home/potato/ws/build/ydlidar_ros2_driver' returned '1': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver

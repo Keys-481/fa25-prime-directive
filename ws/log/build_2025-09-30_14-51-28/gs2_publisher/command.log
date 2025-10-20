@@ -1,0 +1,2 @@
+Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+Invoked command in '/home/potato/ws/build/gs2_publisher' returned '1': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher

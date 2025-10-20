@@ -1,0 +1,91 @@
+[0.017s] Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver
+[0.129s] -- The C compiler identification is GNU 13.3.0
+[0.246s] -- The CXX compiler identification is GNU 13.3.0
+[0.273s] -- Detecting C compiler ABI info
+[0.443s] -- Detecting C compiler ABI info - done
+[0.458s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.458s] -- Detecting C compile features
+[0.459s] -- Detecting C compile features - done
+[0.473s] -- Detecting CXX compiler ABI info
+[0.658s] -- Detecting CXX compiler ABI info - done
+[0.672s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.672s] -- Detecting CXX compile features
+[0.673s] -- Detecting CXX compile features - done
+[0.675s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.916s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.056s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.083s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.124s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.140s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.160s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.182s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.276s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.279s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.310s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.391s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.465s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[1.503s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[1.535s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.727s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.733s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.734s] -- Configured cppcheck include dirs: /home/potato/ws/src/ydlidar_ros2_driver/src
+[1.734s] -- Configured cppcheck exclude dirs and/or files: 
+[1.739s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.739s] -- Configured cpplint exclude dirs and/or files: 
+[1.741s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.741s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.742s] -- Added test 'lint_cmake' to check CMake code style
+[1.744s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.749s] -- Added test 'uncrustify' to check C / C++ code style
+[1.749s] -- Configured uncrustify additional arguments: 
+[1.750s] -- Added test 'xmllint' to check XML markup files
+[1.752s] -- Configuring done (1.7s)
+[1.786s] -- Generating done (0.0s)
+[1.805s] -- Build files have been written to: /home/potato/ws/build/ydlidar_ros2_driver
+[1.825s] Invoked command in '/home/potato/ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver
+[1.827s] Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/potato/ws/build/ydlidar_ros2_driver -- -j4 -l4
+[1.929s] [ 50%] Built target ydlidar_ros2_driver_client
+[1.932s] [100%] Built target ydlidar_ros2_driver_node
+[1.953s] Invoked command in '/home/potato/ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/potato/ws/build/ydlidar_ros2_driver -- -j4 -l4
+[1.969s] Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/potato/ws/build/ydlidar_ros2_driver
+[1.982s] -- Install configuration: ""
+[1.982s] -- Execute custom install script
+[1.983s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[1.983s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[1.983s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[1.983s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[1.984s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[1.984s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml
+[1.984s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml
+[1.984s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml
+[1.984s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml
+[1.985s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml
+[1.985s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml
+[1.985s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml
+[1.985s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml
+[1.985s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml
+[1.985s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml
+[1.985s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml
+[1.985s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml
+[1.986s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml
+[1.986s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml
+[1.986s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml
+[1.986s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[1.986s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[1.987s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[1.987s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[1.987s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[1.987s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[1.987s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[1.988s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[1.988s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[1.988s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[1.988s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[1.988s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[1.989s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[1.989s] -- Symlinking: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[2.007s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[2.008s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[2.008s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[2.008s] -- Up-to-date symlink: /home/potato/ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[2.011s] Invoked command in '/home/potato/ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/potato/ws/build/ydlidar_ros2_driver

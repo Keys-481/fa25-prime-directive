@@ -1,0 +1,66 @@
+[0.015s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[0.135s] -- The C compiler identification is GNU 13.3.0
+[0.253s] -- The CXX compiler identification is GNU 13.3.0
+[0.280s] -- Detecting C compiler ABI info
+[0.452s] -- Detecting C compiler ABI info - done
+[0.467s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.467s] -- Detecting C compile features
+[0.468s] -- Detecting C compile features - done
+[0.481s] -- Detecting CXX compiler ABI info
+[0.667s] -- Detecting CXX compiler ABI info - done
+[0.683s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.683s] -- Detecting CXX compile features
+[0.684s] -- Detecting CXX compile features - done
+[0.686s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.927s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.100s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.145s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.163s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.184s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.208s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.307s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.311s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.345s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.429s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.506s] -- Found ydlidar_sdk package
+[1.507s] [33mCMake Warning at CMakeLists.txt:27 (message):
+[1.507s]   ydlidar_sdk package found, but no target exported; falling back to manual
+[1.507s]   link
+[1.507s] 
+[1.507s] [0m
+[1.669s] -- Configuring done (1.6s)
+[1.693s] -- Generating done (0.0s)
+[1.695s] [33mCMake Warning:
+[1.696s]   Manually-specified variables were not used by the project:
+[1.696s] 
+[1.696s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.696s]     CATKIN_SYMLINK_INSTALL
+[1.696s] 
+[1.696s] [0m
+[1.702s] -- Build files have been written to: /home/potato/ws/build/gs2_publisher
+[1.724s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[1.727s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4
+[1.825s] [ 50%] [32mBuilding CXX object CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o[0m
+[8.706s] [100%] [32m[1mLinking CXX executable gs2_node[0m
+[9.116s] [100%] Built target gs2_node
+[9.136s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4
+[9.138s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake --install /home/potato/ws/build/gs2_publisher
+[9.151s] -- Install configuration: ""
+[9.151s] -- Installing: /home/potato/ws/install/gs2_publisher/lib/gs2_publisher/gs2_node
+[9.155s] -- Set non-toolchain portion of runtime path of "/home/potato/ws/install/gs2_publisher/lib/gs2_publisher/gs2_node" to ""
+[9.155s] -- Installing: /home/potato/ws/install/gs2_publisher/share/ament_index/resource_index/package_run_dependencies/gs2_publisher
+[9.155s] -- Installing: /home/potato/ws/install/gs2_publisher/share/ament_index/resource_index/parent_prefix_path/gs2_publisher
+[9.155s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/environment/ament_prefix_path.sh
+[9.156s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/environment/ament_prefix_path.dsv
+[9.156s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/environment/path.sh
+[9.156s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/environment/path.dsv
+[9.156s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/local_setup.bash
+[9.156s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/local_setup.sh
+[9.156s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/local_setup.zsh
+[9.157s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/local_setup.dsv
+[9.157s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.dsv
+[9.157s] -- Installing: /home/potato/ws/install/gs2_publisher/share/ament_index/resource_index/packages/gs2_publisher
+[9.157s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/cmake/gs2_publisherConfig.cmake
+[9.157s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/cmake/gs2_publisherConfig-version.cmake
+[9.157s] -- Installing: /home/potato/ws/install/gs2_publisher/share/gs2_publisher/package.xml
+[9.160s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake --install /home/potato/ws/build/gs2_publisher

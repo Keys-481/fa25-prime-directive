@@ -1,0 +1,99 @@
+[0.015s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[0.133s] -- The C compiler identification is GNU 13.3.0
+[0.252s] -- The CXX compiler identification is GNU 13.3.0
+[0.279s] -- Detecting C compiler ABI info
+[0.449s] -- Detecting C compiler ABI info - done
+[0.465s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.465s] -- Detecting C compile features
+[0.465s] -- Detecting C compile features - done
+[0.479s] -- Detecting CXX compiler ABI info
+[0.667s] -- Detecting CXX compiler ABI info - done
+[0.683s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.683s] -- Detecting CXX compile features
+[0.684s] -- Detecting CXX compile features - done
+[0.686s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.921s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.088s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.128s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.144s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.163s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.186s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.279s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.282s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.313s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.394s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.468s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.619s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.621s] -- Found Threads: TRUE  
+[1.625s] -- Found ydlidar_sdk package
+[1.625s] [33mCMake Warning at CMakeLists.txt:27 (message):
+[1.625s]   ydlidar_sdk package found, but no target exported; falling back to manual
+[1.625s]   link
+[1.625s] 
+[1.625s] [0m
+[1.787s] -- Configuring done (1.8s)
+[1.819s] -- Generating done (0.0s)
+[1.834s] [33mCMake Warning:
+[1.834s]   Manually-specified variables were not used by the project:
+[1.834s] 
+[1.834s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.834s]     CATKIN_SYMLINK_INSTALL
+[1.834s] 
+[1.834s] [0m
+[1.840s] -- Build files have been written to: /home/potato/ws/build/gs2_publisher
+[1.859s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '0': /usr/bin/cmake /home/potato/ws/src/gs2_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/gs2_publisher
+[1.861s] Invoking command in '/home/potato/ws/build/gs2_publisher': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4
+[1.968s] [ 50%] [32mBuilding CXX object CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o[0m
+[5.788s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:150:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_info[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[Knode_info[m[K’?
+[5.788s]   150 |   std::vector<ydlidar::[01;31m[Knode_info[m[K> nodes_;
+[5.788s]       |                        [01;31m[K^~~~~~~~~[m[K
+[5.788s] In file included from [01m[K/usr/local/include/src/GSLidarDriver.h:59[m[K,
+[5.788s]                  from [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:5[m[K:
+[5.788s] [01m[K/usr/local/include/core/common/ydlidar_protocol.h:204:8:[m[K [01;36m[Knote: [m[K‘[01m[Knode_info[m[K’ declared here
+[5.789s]   204 | struct [01;36m[Knode_info[m[K {
+[5.789s]       |        [01;36m[K^~~~~~~~~[m[K
+[5.789s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:150:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[5.789s]   150 |   std::vector<ydlidar::node_info[01;31m[K>[m[K nodes_;
+[5.789s]       |                                 [01;31m[K^[m[K
+[5.789s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:150:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[5.796s] In file included from [01m[K/usr/local/include/core/base/v8stdint.h:3[m[K,
+[5.796s]                  from [01m[K/usr/local/include/core/serial/serial.h:9[m[K,
+[5.796s]                  from [01m[K/usr/local/include/src/GSLidarDriver.h:56[m[K:
+[5.796s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In constructor ‘[01m[KNodeGS::[01;32m[KNodeGS[m[K()[m[K’:
+[5.797s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:43:39:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+[5.797s]    43 |     if (drv_->startScan() != ydlidar::[01;31m[KRESULT_OK[m[K) {
+[5.797s]       |                                       [01;31m[K^~~~~~~~~[m[K
+[5.797s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:43:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before numeric constant
+[5.797s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:43:8:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[5.797s]    43 |     if [01;36m[K([m[Kdrv_->startScan() != ydlidar::RESULT_OK) {
+[5.797s]       |        [01;36m[K^[m[K
+[5.797s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:48:12:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresize[m[K’ in ‘[01m[K((NodeGS*)this)->NodeGS::nodes_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[5.797s]    48 |     nodes_.[01;31m[Kresize[m[K(8192);
+[5.797s]       |            [01;31m[K^~~~~~[m[K
+[5.803s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:[m[K In member function ‘[01m[Kvoid NodeGS::[01;32m[Ktick[m[K()[m[K’:
+[5.803s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:66:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((NodeGS*)this)->NodeGS::nodes_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[5.804s]    66 |     size_t count = nodes_.[01;31m[Ksize[m[K();
+[5.804s]       |                           [01;31m[K^~~~[m[K
+[5.804s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:68:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[K((NodeGS*)this)->NodeGS::nodes_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[5.804s]    68 |     if (drv_->grabScanData(nodes_.[01;31m[Kdata[m[K(), count, 200) != ydlidar::RESULT_OK) return;
+[5.804s]       |                                   [01;31m[K^~~~[m[K
+[5.804s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:68:67:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+[5.804s]    68 |     if (drv_->grabScanData(nodes_.data(), count, 200) != ydlidar::[01;31m[KRESULT_OK[m[K) return;
+[5.804s]       |                                                                   [01;31m[K^~~~~~~~~[m[K
+[5.804s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:68:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before numeric constant
+[5.804s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:68:8:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[5.804s]    68 |     if [01;36m[K([m[Kdrv_->grabScanData(nodes_.data(), count, 200) != ydlidar::RESULT_OK) return;
+[5.805s]       |        [01;36m[K^[m[K
+[5.805s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:71:33:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[K((NodeGS*)this)->NodeGS::nodes_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[5.805s]    71 |     drv_->ascendScanData(nodes_.[01;31m[Kdata[m[K(), count);
+[5.805s]       |                                 [01;31m[K^~~~[m[K
+[5.805s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:89:31:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+[5.805s]    89 |         const auto &n = nodes_[01;31m[K[[m[Ki];
+[5.805s]       |                               [01;31m[K^[m[K
+[5.805s] [01m[K/home/potato/ws/src/gs2_publisher/src/gs2_node.cpp:117:31:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+[5.805s]   117 |         const auto &n = nodes_[01;31m[K[[m[Ki];
+[5.805s]       |                               [01;31m[K^[m[K
+[7.210s] gmake[2]: *** [CMakeFiles/gs2_node.dir/build.make:76: CMakeFiles/gs2_node.dir/src/gs2_node.cpp.o] Error 1
+[7.210s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gs2_node.dir/all] Error 2
+[7.211s] gmake: *** [Makefile:146: all] Error 2
+[7.214s] Invoked command in '/home/potato/ws/build/gs2_publisher' returned '2': /usr/bin/cmake --build /home/potato/ws/build/gs2_publisher -- -j4 -l4

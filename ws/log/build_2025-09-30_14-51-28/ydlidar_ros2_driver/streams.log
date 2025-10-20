@@ -1,0 +1,44 @@
+[0.017s] Invoking command in '/home/potato/ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/potato/ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/potato/ws/install/ydlidar_ros2_driver
+[0.128s] -- The C compiler identification is GNU 13.3.0
+[0.243s] -- The CXX compiler identification is GNU 13.3.0
+[0.270s] -- Detecting C compiler ABI info
+[0.441s] -- Detecting C compiler ABI info - done
+[0.457s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.457s] -- Detecting C compile features
+[0.458s] -- Detecting C compile features - done
+[0.472s] -- Detecting CXX compiler ABI info
+[0.702s] -- Detecting CXX compiler ABI info - done
+[0.717s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.717s] -- Detecting CXX compile features
+[0.718s] -- Detecting CXX compile features - done
+[0.722s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.952s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.081s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.113s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.155s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.173s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.193s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.216s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.313s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.316s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.349s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.433s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.511s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[1.551s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[1.582s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.772s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.777s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.778s] -- Configured cppcheck include dirs: /home/potato/ws/src/ydlidar_ros2_driver/src
+[1.778s] -- Configured cppcheck exclude dirs and/or files: 
+[1.783s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.783s] -- Configured cpplint exclude dirs and/or files: 
+[1.784s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.784s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.786s] -- Added test 'lint_cmake' to check CMake code style
+[1.787s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.792s] -- Added test 'uncrustify' to check C / C++ code style
+[1.792s] -- Configured uncrustify additional arguments: 
+[1.793s] -- Added test 'xmllint' to check XML markup files
+[1.794s] -- Configuring done (1.8s)
+[1.826s] -- Generating done (0.0s)
+[1.841s] -- Build files have been written to: /home/potato/ws/build/ydlidar_ros2_driver
