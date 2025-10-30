@@ -1,0 +1,120 @@
+
+============================================================
+WSL Python OpenCV AI Project: Setup, Usage, and Troubleshooting
+============================================================
+
+1. Project Setup
+----------------
+
+1. Open your WSL terminal.
+2. Navigate to your project directory:
+	  cd /mnt/c/Users/{your-user-name}/path-to-file/Git/fa25-prime-directive/AI
+3. (Recommended) Create and activate a virtual environment:
+	  python3 -m venv venv
+	  source venv/bin/activate
+4. Install OpenCV and NumPy:
+	  pip install opencv-python numpy
+   - If you see an "externally-managed-environment" error, use:
+	  pip install --break-system-packages opencv-python numpy
+5. (Optional) Install additional AI libraries:
+	  pip install tensorflow torch torchvision scikit-learn
+
+2. Running test.py
+------------------
+
+1. (Optional) Activate your virtual environment:
+	  source venv/bin/activate
+2. Run the test.py script:
+	  python3 Testing/test.py
+   - This will process the image and save the output as Testing/output.jpg.
+   - Python scripts do not need to be compiled; just run them directly.
+
+3. Example Scripts
+------------------
+
+**Basic OpenCV Test (headless, WSL-friendly):**
+
+	import cv2
+	img = cv2.imread('Testing/path_to_image.jpeg')
+	if img is not None:
+		cv2.imwrite('Testing/output.jpg', img)
+		print('Image saved as Testing/output.jpg')
+	else:
+		print('Error: Image not found or path is incorrect.')
+
+**Face Detection Example:**
+
+	import cv2
+	face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+	img = cv2.imread('path_to_image.jpg')
+	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+	for (x, y, w, h) in faces:
+		cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
+	# For WSL, save result instead of imshow:
+	cv2.imwrite('Testing/faces_output.jpg', img)
+	print('Faces image saved as Testing/faces_output.jpg')
+
+4. WSL OpenCV GUI (cv2.imshow) Troubleshooting
+----------------------------------------------
+
+If you get errors like:
+	qt.qpa.xcb: could not connect to display :0
+	This application failed to start because no Qt platform plugin could be initialized.
+
+This means OpenCV's GUI functions (like cv2.imshow) require an X server (graphical environment) to display windows, which is not available by default in WSL.
+
+**To fix:**
+1. Install an X server on Windows (e.g., VcXsrv or Xming).
+   - Download VcXsrv: https://sourceforge.net/projects/vcxsrv/
+2. Start the X server on Windows before running your script.
+3. In your WSL terminal, set the DISPLAY variable to your Windows host IP:
+	  export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+4. Run your script again:
+	  python3 Testing/test.py
+
+**Tips:**
+- Make sure the X server is running and not blocked by a firewall.
+- When starting VcXsrv, check "Disable access control" to allow connections.
+
+**Headless alternative:**
+If you do not need to display images, you can save them to a file and view them in Windows (see example above).
+
+5. Troubleshooting: Externally Managed Environment & Package Conflicts
+---------------------------------------------------------------------
+
+If you see an error like:
+	error: externally-managed-environment
+
+This means your Python environment is managed by the OS and restricts pip installs. To work around this:
+
+1. **If using a virtual environment (recommended):**
+	  source venv/bin/activate
+   - If you still see the error, use pip with the --break-system-packages flag:
+	  pip install --break-system-packages opencv-python numpy
+
+2. **If you get version conflicts (e.g., numpy and scipy):**
+   - If you see a conflict between opencv-python and scipy over numpy version:
+		- opencv-python 4.12.0.88 requires numpy >=2 and <2.3.0 (for Python 3.9+)
+		- scipy 1.11.4 requires numpy <1.28.0
+   - There is no single numpy version that satisfies both. You have two options:
+		1. Downgrade opencv-python to a version compatible with numpy 1.26.4:
+			 pip install --break-system-packages 'opencv-python<4.7.0.72' numpy==1.26.4
+		2. Or, if you need a newer opencv-python, consider updating/downgrading scipy to a version compatible with numpy >=2.
+   - Choose the combination that fits your project needs.
+
+3. **If you see warnings about ~/.local/bin not being on PATH:**
+   - Add this to your ~/.bashrc or ~/.zshrc:
+		export PATH="$HOME/.local/bin:$PATH"
+   - Then run:
+		source ~/.bashrc
+
+4. **If problems persist:**
+   - Delete and recreate your virtual environment:
+		deactivate
+		rm -rf venv
+		python3 -m venv venv
+		source venv/bin/activate
+		pip install --break-system-packages opencv-python numpy
+
+See also: /usr/share/doc/python3.12/README.venv and PEP 668 for more info.
