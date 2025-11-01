@@ -1,0 +1,244 @@
+
+IMPORTANT WARNING FOR WINDOWS USERS (2025):
+-------------------------------------------
+NumPy 2.x on Python 3.12+ for Windows is experimental and unstable. You may see warnings like:
+	Numpy built with MINGW-W64 on Windows 64 bits is experimental, and only available for testing.
+	CRASHES ARE TO BE EXPECTED - PLEASE REPORT THEM TO NUMPY DEVELOPERS
+	RuntimeWarning: invalid value encountered in exp2
+If your script does not print any output or crashes after these warnings, downgrade to Python 3.11.x and recreate your virtual environment. NumPy and OpenCV are more stable on Python 3.11.
+
+Recommended steps:
+- Uninstall your current .venv folder.
+- Install Python 3.11 from https://www.python.org/downloads/windows/
+- Create a new virtual environment with Python 3.11.
+- Install opencv-python and numpy (preferably numpy 2.1.0 or 2.2.0).
+
+For production or reliable development, always use Python 3.11 or earlier with OpenCV and NumPy on Windows.
+
+---
+
+Capturing Image and Video from Windows Host Webcam in WSL
+========================================================
+
+1. Enable Camera Access in WSL
+-----------------------------
+- Requires Windows 11 and WSL 2.
+- Update WSL to the latest version:
+	```bash
+	wsl --update
+	```
+
+2. Test Camera Device in WSL
+----------------------------
+- In WSL, check for video devices:
+	```bash
+	ls /dev/video*
+	```
+- You should see something like `/dev/video0`. If not, check Windows Camera Privacy settings and restart WSL.
+
+3. Install Required Packages
+---------------------------
+```bash
+sudo apt update
+sudo apt install v4l-utils
+pip install --break-system-packages opencv-python
+```
+
+4. Python Script to Capture Image
+--------------------------------
+```python
+import cv2
+
+cap = cv2.VideoCapture(0)  # 0 is usually the default webcam
+ret, frame = cap.read()
+if ret:
+		cv2.imwrite('Testing/captured_image.jpg', frame)
+		print("Image saved as Testing/captured_image.jpg")
+else:
+		print("Failed to capture image.")
+cap.release()
+```
+
+5. Python Script to Capture Video
+--------------------------------
+```python
+import cv2
+
+cap = cv2.VideoCapture(0)
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('Testing/captured_video.avi', fourcc, 20.0, (640, 480))
+
+for _ in range(100):  # Capture 100 frames (~5 seconds at 20fps)
+		ret, frame = cap.read()
+		if ret:
+				out.write(frame)
+		else:
+				break
+
+cap.release()
+out.release()
+print("Video saved as Testing/captured_video.avi")
+```
+
+Notes:
+------
+- If you get errors, make sure your webcam is not in use by another application on Windows.
+- If `/dev/video0` does not appear, restart WSL or check Windows privacy settings.
+
+
+Troubleshooting: Built-in Laptop Webcam Not Detected in WSL
+----------------------------------------------------------
+
+If your laptop's built-in webcam does not appear as `/dev/video0` in WSL:
+
+1. **Check Requirements:**
+	- Only Windows 11 and WSL 2 support webcam passthrough.
+	- Built-in webcams are supported, but you must be on the latest WSL version.
+
+2. **Update and Restart WSL:**
+	```bash
+	wsl --update
+	wsl --shutdown
+	```
+	Then reboot your Windows machine.
+
+3. **Check Windows Camera Privacy Settings:**
+	- Go to Settings > Privacy & security > Camera.
+	- Ensure all camera access toggles are ON, including "Let desktop apps access your camera".
+
+4. **Close Other Camera Apps:**
+	- Make sure no other application (Zoom, Teams, etc.) is using the webcam.
+
+5. **Try Again:**
+	```bash
+	ls /dev/video*
+	```
+
+6. **If Still Not Detected:**
+	- Some hardware or drivers may not yet be supported for passthrough in WSL.
+	- Check the official Microsoft WSL USB documentation for updates:
+	  https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+
+If you continue to have issues, consider using your webcam from Windows apps or try accessing it from a native Linux installation.
+
+
+---
+
+Note on Python/OpenCV Installations
+Limitation: Windows vs. WSL Webcam Access
+
+OpenCV and Python 2.7 Incompatibility
+
+Setting Up Python 3 and Virtual Environments in Visual Studio Code (Windows)
+----------------------------------------------------------------------------
+
+1. **Install Python 3:**
+	 - Download from https://www.python.org/downloads/windows/
+	 - During installation, check “Add Python to PATH”.
+
+2. **Open your project in VS Code.**
+
+3. **Create a virtual environment:**
+	 - In the VS Code terminal:
+		 ```
+		 python -m venv .venv
+		 ```
+
+4. **Activate the virtual environment:**
+	 - In PowerShell, use:
+		 ```
+		 .venv\Scripts\Activate.ps1
+		 ```
+	 - If you see a security error about execution policy, run (as user, not admin):
+		 ```
+		 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+		 ```
+		 Then try activating again.
+	 - In Command Prompt (cmd.exe), use:
+		 ```
+		 .venv\Scripts\activate.bat
+		 ```
+	 - In Git Bash, use:
+		 ```
+		 source .venv/Scripts/activate
+		 ```
+
+5. **Select the Python 3 interpreter in VS Code:**
+	 - Press Ctrl+Shift+P, type “Python: Select Interpreter”, and choose the one with `.venv` and Python 3.x in the path.
+
+6. **Install OpenCV and NumPy:**
+	 - With the venv activated, run:
+		 ```
+		 pip install --upgrade pip
+		 pip install opencv-python numpy
+		 ```
+
+7. **Run your scripts as needed.**
+
+---
+
+**Common Issues & Fixes:**
+
+- If you see `The term 'pip' is not recognized...`, Python is not in your PATH. Reinstall Python and check “Add Python to PATH”.
+- If you see `No module named venv`, you are using Python 2.7. Install Python 3 and use it.
+- If you see a security error about unsigned scripts, set the execution policy as shown above.
+- Always use the correct activation command for your shell (PowerShell, cmd, or Git Bash).
+-------------------------------------
+
+- Modern OpenCV (opencv-python) and NumPy do NOT support Python 2.7.9.
+- You must use Python 3.7 or newer to install and use OpenCV and most scientific Python packages.
+
+How to Switch to Python 3 in Visual Studio Code
+-----------------------------------------------
+1. Open your project folder in VS Code.
+2. Open the Command Palette (Ctrl+Shift+P).
+3. Type and select: Python: Select Interpreter.
+4. Choose a Python 3 interpreter from the list (look for one with python3 or Python 3.x in the path).
+5. Your VS Code terminal and scripts will now use Python 3.
+
+If you do not see Python 3, install it from https://www.python.org/downloads/windows/ and restart VS Code.
+----------------------------------------
+
+- Windows apps (including Python/OpenCV) can use your built-in webcam without issue.
+- WSL (Linux) may not detect built-in webcams as /dev/video0, even if all privacy and device settings are correct.
+- This is a current limitation of WSL webcam passthrough and may not be fixable for some hardware.
+- If webcam access is essential, consider running your code in Windows instead of WSL, or use a USB webcam (which is more likely to be detected in WSL).
+-----------------------------------
+
+Currently, Windows and WSL are separate environments. This means:
+- You must install Python and OpenCV separately in both Windows and WSL if you want to use them in both places.
+- There is no supported way to share a single Python or OpenCV installation between Windows and WSL.
+- This does use more disk space, but is required for compatibility and proper operation.
+
+If you want to avoid duplicate installations, you must choose to work entirely in either Windows or WSL, depending on which features (like webcam access) you need.
+
+Install OpenCV and NumPy in the Virtual Environment
+
+In the VS Code terminal (with the venv activated), run:
+-----------------------------------
+
+pip install --upgrade pip
+pip install opencv-python
+pip install numpy==2.1.0 --only-binary=:all:
+
+**Important:**
+- Always install numpy==2.2.0 after opencv-python to avoid version conflicts.
+- If you install or upgrade numpy after opencv-python, always specify the compatible version:
+	pip install numpy==2.2.0
+
+**Troubleshooting Numpy Warnings and Version Issues:**
+-----------------------------------------------------
+- As of late 2025, the only available numpy wheels for Python 3.12+ are built with MINGW-W64, which may show warnings and are not recommended for production.
+- You may see warnings like:
+  `Numpy built with MINGW-W64 on Windows 64 bits is experimental...`
+- If you try to install numpy==2.2.0 or numpy==2.1.0 and get "No matching distribution found", it means those versions are not available for your Python version.
+- If your code works despite the warning, you can ignore it for testing and learning.
+- For production, use the official Python from python.org and consider using Python 3.11 or earlier, which may have more stable numpy wheels.
+
+python "Using Webcam in WSL\capturevideo.py"
+
+python '.\Using Webcam in WSL\capturevideo.py'
+
+python "Using Webcam in WSL\captureimage.py"
+
+python '.\Using Webcam in WSL\captureimage.py'
