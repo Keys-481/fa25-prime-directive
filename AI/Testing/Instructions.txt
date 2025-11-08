@@ -118,3 +118,47 @@ This means your Python environment is managed by the OS and restricts pip instal
 		pip install --break-system-packages opencv-python numpy
 
 See also: /usr/share/doc/python3.12/README.venv and PEP 668 for more info.
+
+Running the Face Detection Script (Windows)
+==========================================
+
+The face_detect.py script detects faces in images and draws rectangles around them.
+
+Prerequisites:
+- Virtual environment activated with OpenCV installed
+- An image to process (can be captured with the webcam scripts)
+
+Step-by-Step Instructions:
+
+1. Activate your virtual environment:
+   ```powershell
+   .venv\Scripts\Activate.ps1
+   ```
+
+2. Capture an image with your face (optional, if you haven't already):
+   ```powershell
+   python ".\Using Webcam in WSL\captureimage.py"
+   ```
+
+3. Run the face detection script:
+   ```powershell
+   python ".\Testing\face_detect.py"
+   ```
+
+The script will:
+- Look for an image from your webcam capture
+- Detect faces in the image
+- Draw blue rectangles around detected faces
+- Save the result as Testing/faces_output.jpg
+- Print how many faces were found
+
+Requirements:
+Make sure you have OpenCV installed in your virtual environment:
+```powershell
+pip install opencv-python
+```
+
+Troubleshooting:
+- If you get "No image found", run the webcam capture script first
+- If the script crashes, ensure your virtual environment is activated and OpenCV is installed
+- The output image will be saved in the Testing folder
