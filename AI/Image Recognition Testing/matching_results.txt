@@ -1,0 +1,95 @@
+
+============================================================
+DATASET MATCHING RESULTS
+Time: 2025-11-14 09:57:49
+Input Image: Image Recognition Testing/captured_for_matching_1.jpg
+============================================================
+
+TOP 5 MATCHES:
+----------------------------------------
+1. Category: Cloud images
+   File: 4E689C68-F530-4CDE-8D09-75F9EDA4D5AB.jpeg
+   Match: 91.6%
+
+2. Category: Iceberg images
+   File: D97713FC-BC63-4D59-BC41-2AC58BCC8D38.jpeg
+   Match: 90.7%
+
+3. Category: Boardwalk and Fishing Pier images
+   File: 75ABF4FB-0EC1-4FD1-8657-C7E0A4392268.jpeg
+   Match: 90.3%
+
+4. Category: Palm Tree images
+   File: 4562AD23-3AAE-4CAF-AB93-8A5DE52F2B4A.jpeg
+   Match: 89.0%
+
+5. Category: Sunset images
+   File: B1FCF898-F2E5-4B75-BC9B-64E9A0511A5B.jpeg
+   Match: 88.6%
+
+
+CONCLUSION:
+🎯 BEST MATCH: Cloud images (91.6%)
+
+========================================
+ALL CATEGORY MATCHES:
+========================================
+ 1. Cloud images                   :  91.6% (4E689C68-F530-4CDE-8D09-75F9EDA4D5AB.jpeg)
+ 2. Iceberg images                 :  90.7% (D97713FC-BC63-4D59-BC41-2AC58BCC8D38.jpeg)
+ 3. Boardwalk and Fishing Pier images :  90.3% (75ABF4FB-0EC1-4FD1-8657-C7E0A4392268.jpeg)
+ 4. Palm Tree images               :  89.0% (4562AD23-3AAE-4CAF-AB93-8A5DE52F2B4A.jpeg)
+ 5. Sunset images                  :  88.6% (B1FCF898-F2E5-4B75-BC9B-64E9A0511A5B.jpeg)
+ 6. Seashell images                :  88.2% (F6B8DF28-435E-4A0F-81FC-D7398E886AE2.jpeg)
+ 7. Cactus images                  :  88.0% (EFCF36C6-2086-4683-952E-17F3951D74A2.jpeg)
+ 8. Rainbow images                 :  87.6% (50715B7A-0815-48AF-8444-7E887ACD185F.jpeg)
+ 9. Wildflower images (small)      :  86.4% (AD6E017E-9223-4859-A7F2-7DB7C855D840.jpeg)
+10. Forest images (small)          :  84.4% (1E175F97-2760-419E-BDBE-1BC75989F287.jpeg)
+
+
+=== MATCH RESULT - 2025-11-14 10:20:26 ===
+Image: captured_for_matching_1.jpg
+Algorithm: auto
+Conclusion: BEST MATCH: Seashell images (91.0%)
+Top matches:
+  1. Seashell images: 91.0% (7885B060-A5F9-4BB7-BA31-DF7B2B2162E0.jpeg)
+  2. Cloud images: 84.9% (4E689C68-F530-4CDE-8D09-75F9EDA4D5AB.jpeg)
+  3. Boardwalk and Fishing Pier images: 84.4% (B4E4387C-D531-4B44-B93F-AB5D199995CC.jpeg)
+  4. Iceberg images: 83.6% (C0917ED2-96D7-4FDB-92F7-38E9C831EE40.jpeg)
+  5. Sunset images: 83.3% (B1FCF898-F2E5-4B75-BC9B-64E9A0511A5B.jpeg)
+--------------------------------------------------
+
+=== MATCH RESULT - 2025-11-14 10:24:35 ===
+Image: captured_for_matching_1.jpg
+Algorithm: auto
+Conclusion: BEST MATCH: Forest images (small) (88.9%)
+Top matches:
+  1. Forest images (small): 88.9% (A20D93F6-D286-4477-92B9-73AE99696B9C.jpeg)
+  2. Cactus images: 88.5% (AAC68304-6962-40C5-9DD7-C1EF3C3EF0C8.jpeg)
+  3. Boardwalk and Fishing Pier images: 86.4% (CD580511-E0A7-43E9-BC73-336115AF06BB.jpeg)
+  4. Palm Tree images: 85.6% (E556841E-0E3E-40A6-AF62-ABD6DFE36859.jpeg)
+  5. Seashell images: 85.5% (997665DE-EFFD-4FA8-9594-05608F83FFC4.jpeg)
+--------------------------------------------------
+
+=== MATCH RESULT - 2025-11-14 10:26:21 ===
+Image: captured_for_matching_1.jpg
+Algorithm: auto
+Conclusion: BEST MATCH: Seashell images (90.8%)
+Top matches:
+  1. Seashell images: 90.8% (B86FC23E-B6C7-4A7C-83F8-8C8F3FF77741.jpeg)
+  2. Palm Tree images: 76.1% (E7533C1F-2A1E-4270-9023-E74C0C4D18D8.jpeg)
+  3. Boardwalk and Fishing Pier images: 74.8% (AEAC6F94-E946-414F-AAE9-041059C52F12.jpeg)
+  4. Cactus images: 67.8% (C9F65FF2-8667-430E-855E-C15EB786F309.jpeg)
+  5. Sunset images: 67.6% (E87CC292-DDD4-43B7-A2DC-3D569B463320.jpeg)
+--------------------------------------------------
+
+=== MATCH RESULT - 2025-11-14 10:30:32 ===
+Image: captured_for_matching_1.jpg
+Algorithm: auto
+Conclusion: BEST MATCH: Cloud images (89.7%)
+Top matches:
+  1. Cloud images: 89.7% (4E689C68-F530-4CDE-8D09-75F9EDA4D5AB.jpeg)
+  2. Boardwalk and Fishing Pier images: 87.5% (8E3E7A2B-0720-466E-BCDF-D986E20EC6AB.jpeg)
+  3. Palm Tree images: 86.3% (4562AD23-3AAE-4CAF-AB93-8A5DE52F2B4A.jpeg)
+  4. Sunset images: 86.2% (361BB848-95D7-4CDD-9A14-96D36FA93023.jpeg)
+  5. Iceberg images: 85.0% (D97713FC-BC63-4D59-BC41-2AC58BCC8D38.jpeg)
+--------------------------------------------------
