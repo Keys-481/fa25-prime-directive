@@ -6,3 +6,7 @@ Create a crontab file that will launch the program when the Pi is booted up usin
   crontab -e
 Then add the following to the bottom of the file:
   @reboot "command or path to script"
+
+Notes for device functionality:
+The camera device module index will almost certainly be either 1 or 0.
+In our use case, the index is 0
