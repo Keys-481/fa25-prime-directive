@@ -1,0 +1,24 @@
+
+=== MATCH RESULT - 2025-11-21 12:44:05 ===
+Image: C:\Users\ano\Downloads\Objective-C\Books\Git\fa25-prime-directive\AI\Image Specific Testing\image\captured_for_matching_1.jpg
+Algorithm: auto
+Conclusion: BEST MATCH: Boardwalk and Fishing Pier images (93.4%)
+Top matches:
+  1. Boardwalk and Fishing Pier images: 93.4% (var00000003.jpeg)
+  2. Cloud images: 93.1% (var00000003.jpeg)
+  3. Iceberg images: 91.4% (var00000003.jpeg)
+  4. Rainbow images: 90.8% (var00000002.jpeg)
+  5. Palm Tree images: 90.5% (var00000003.jpeg)
+--------------------------------------------------
+
+=== MATCH RESULT - 2025-11-21 12:54:47 ===
+Image: C:\Users\ano\Downloads\Objective-C\Books\Git\fa25-prime-directive\AI\Image Specific Testing\image\captured_for_matching_1.jpg
+Algorithm: auto
+Conclusion: BEST MATCH: Forest images (small) (89.4%)
+Top matches:
+  1. Forest images (small) / N/A: 89.4% (var00000008.jpeg)
+  2. Boardwalk and Fishing Pier images / N/A: 88.5% (var00000013.jpeg)
+  3. Rainbow images / N/A: 88.1% (var00000002.jpeg)
+  4. Iceberg images / N/A: 87.5% (var00000002.jpeg)
+  5. Cloud images / N/A: 86.6% (var00000008.jpeg)
+--------------------------------------------------
