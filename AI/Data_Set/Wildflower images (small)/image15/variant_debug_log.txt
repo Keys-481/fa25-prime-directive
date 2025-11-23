@@ -1,0 +1,18 @@
+Variant Debug Log for image15
+Original image: 54261A86-A77B-4071-A859-9FF4547DDDB5.jpeg
+
+Saved var00000001.jpeg: Darker (70% brightness)
+Saved var00000002.jpeg: Brighter (130% brightness)
+Saved var00000003.jpeg: Higher contrast
+Saved var00000004.jpeg: Lower contrast
+Saved var00000005.jpeg: Grayscale (B&W)
+Saved var00000006.jpeg: Sepia tone
+Saved var00000007.jpeg: Slight blur
+Saved var00000008.jpeg: Random noise
+Saved var00000009.jpeg: Rotated 5 degrees
+Saved var00000010.jpeg: Rotated -5 degrees
+Saved var00000011.jpeg: Horizontal flip
+Saved var00000012.jpeg: Scaled down and up (simulate lower resolution)
+Saved var00000013.jpeg: Color shift
+Saved var00000014.jpeg: Desaturated (less color)
+Saved var00000015.jpeg: JPEG compression artifacts
