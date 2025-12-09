@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Directive - ROS2 Autonomous System</title>
+    <title>Prime Directive</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Prime Directive</h1>
+                <h1>P.O.T.A.T.O.</h1>
                 <p class="subtitle">A ROS2-based autonomous system with computer vision and LiDAR mapping</p>
             </div>
         </section>
@@ -32,8 +32,8 @@
             <div class="container">
                 <h2>Project Abstract</h2>
                 <div class="abstract-content">
-                    <p><strong>Project Statement:</strong> [Your project statement here]</p>
-                    <p>[Insert concise project abstract (~200 words) describing the goals, key technologies (OpenCV, LiDAR, Pi Camera 3), and what makes this project unique. This should be understandable to someone outside the robotics field.]</p>
+                    <p><strong>P.O.T.A.T.O.</strong> Parcel Optically Terrain Aware Traversing Operator</p>
+                    <p>An autonomous rover designed to meet the payload challenge at the 2026 Intercollegiate Rocket Engineering Competition (IREC). The rover will transition through 3 stages: flight, exploration, and recovery. During flight, video will be transmitted to the ground station over a 5.8GHz radio link. Upon touchdown, the system detects landing, initializes sensors, and builds a virtual map of the surrounding terrain using lidar, GPS, and SLAM. Through the utilization of computer vision and obstacle avoidance technologies, the rover will begin navigation back to the launch site, sounding a buzzer if it runs out of battery before reaching its destination.</p>
                 </div>
             </div>
         </section>
@@ -44,14 +44,14 @@
                 
                 <div class="desc-subsection">
                     <h3>What We Built</h3>
-                    <p>[Describe the overall system architecture and main components. Explain the ROS2 nodes and their purposes.]</p>
+                    <p>The foundation of a rover capable of autonomous navigation and terrain analysis using advanced sensors and computer vision.</p>
                 </div>
 
                 <div class="desc-subsection">
                     <h3>How It Works</h3>
-                    <p><strong>OpenCV Node:</strong> [Describe image processing pipeline]</p>
-                    <p><strong>LiDAR Mapping Node:</strong> [Describe mapping and localization]</p>
-                    <p><strong>Pi Camera 3 Streaming Node:</strong> [Describe real-time streaming capabilities]</p>
+                    <p><strong>LiDAR Mapping Node:</strong> Takes raw data input from a Ylidar GS2 and turns it into a standardized format, publishes it to the /scan ROS2 topic, to then be visualized in RVIZ software.</p>
+                    <p><strong>Pi Camera 3 Streaming Node:</strong> Utilizing a Pi Cam 3 module, takes images on an interval publishing them to a /cam ROS2 topic. This is then matched with a consumer node that can be run on a separate device wirelessly to stream video with per-frame controls.</p>
+                    <p><strong>OpenCV Development:</strong> Currently being trained on a variety of image processing techniques for object detection and terrain analysis.</p>
                 </div>
 
                 <div class="desc-subsection">
@@ -59,11 +59,11 @@
                     <div class="screenshots">
                         <figure>
                             <img src="screenshot1.png" alt="System overview">
-                            <figcaption>[Screenshot description]</figcaption>
+                            <figcaption>The POTATO being ejected</figcaption>
                         </figure>
                         <figure>
                             <img src="screenshot2.png" alt="LiDAR mapping output">
-                            <figcaption>[Screenshot description]</figcaption>
+                            <figcaption>Potato CAD Model</figcaption>
                         </figure>
                         <figure>
                             <img src="screenshot3.png" alt="Camera feed">
@@ -79,16 +79,16 @@
                 <h2>Team Members</h2>
                 <div class="team-grid">
                     <div class="team-member">
-                        <h3>[Team Member 1]</h3>
-                        <p>[Role/Contributions]</p>
+                        <h3>Jack Lawford</h3>
+                        <p>LiDAR Scanning and Mapping</p>
                     </div>
                     <div class="team-member">
-                        <h3>[Team Member 2]</h3>
-                        <p>[Role/Contributions]</p>
+                        <h3>Ricardo Rodriguez</h3>
+                        <p>Real-Time Video Streaming</p>
                     </div>
                     <div class="team-member">
-                        <h3>[Team Member 3]</h3>
-                        <p>[Role/Contributions]</p>
+                        <h3>Emi Dretcanu</h3>
+                        <p>Computer Vision Development</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Prime Directive. View on <a href="https://github.com" target="_blank">GitHub</a></p>
+            <p>&copy; 2025 Prime Directive. View on <a href="https://github.com/Keys-481/fa25-prime-directive/" target="_blank">GitHub</a></p>
         </div>
     </footer>
 </body>
